@@ -1,0 +1,10 @@
+table name =  dbt_category
+
+Describing table :
+('id', 'int(2)', 'NO', 'PRI', None, 'auto_increment')
+('title', 'varchar(100)', 'NO', '', None, '')
+
+(1, 'Circulars')
+(2, 'Events')
+(3, 'Documentation')
+(4, 'Office Memorandum')

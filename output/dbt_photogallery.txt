@@ -1,0 +1,15 @@
+table name =  dbt_photogallery
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('title', 'varchar(100)', 'NO', '', None, '')
+('type', 'int(2)', 'NO', '', None, '')
+('language', 'int(2)', 'NO', '', None, '')
+('filename', 'varchar(100)', 'NO', '', None, '')
+('filepath', 'varchar(150)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, 'Home Page Banner ', 2, 2, '/data/photogallery/1511252913_GoaBanner.jpg', '/data/photogallery/1511252913_GoaBanner.jpg', 1, datetime.datetime(2017, 12, 14, 12, 24, 43), datetime.datetime(2017, 6, 21, 5, 20, 49))
+(2, 'Goa Banner Hindi', 2, 1, '/data/photogallery/1511252913_GoaBanner.jpg', '/data/photogallery/1511252913_GoaBanner.jpg', 1, datetime.datetime(2017, 12, 14, 12, 24, 11), datetime.datetime(2017, 6, 21, 5, 22, 50))

@@ -1,0 +1,20 @@
+table name =  dbt_scheme_category
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('category_name', 'varchar(255)', 'NO', '', None, '')
+('category_details', 'varchar(255)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', '1', '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+
+(1, 'Student', 'Student', 1, None, datetime.datetime(2018, 3, 26, 4, 33, 9))
+(2, 'Pensioners', 'Pensioners', 1, None, datetime.datetime(2018, 3, 26, 4, 35, 3))
+(3, 'Farmers', 'Farmers', 1, None, datetime.datetime(2018, 3, 26, 4, 35, 19))
+(4, 'Beneficiary', 'Beneficiary', 1, None, datetime.datetime(2018, 3, 26, 4, 36, 55))
+(5, 'SHG Members', 'SHG Members', 1, None, datetime.datetime(2018, 3, 26, 4, 38, 26))
+(6, 'Trainees', 'Trainees', 1, None, datetime.datetime(2018, 3, 26, 4, 38, 50))
+(7, 'Awardee', 'Awardee', 1, None, datetime.datetime(2018, 3, 26, 4, 39, 18))
+(8, 'Fellow', 'Fellow', 1, None, datetime.datetime(2018, 3, 26, 4, 39, 48))
+(9, 'Intern', 'Intern', 1, None, datetime.datetime(2018, 3, 26, 4, 41, 15))
+(10, 'Health Service Provider', 'Health Service Provider', 1, None, datetime.datetime(2018, 3, 26, 4, 41, 35))

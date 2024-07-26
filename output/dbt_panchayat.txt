@@ -1,0 +1,23 @@
+table name =  dbt_panchayat
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('state_code', 'varchar(15)', 'NO', '', None, '')
+('district_code', 'varchar(15)', 'NO', '', None, '')
+('block_code', 'varchar(15)', 'NO', '', None, '')
+('panchayat_code', 'varchar(30)', 'NO', '', None, '')
+('panchayat_name', 'varchar(50)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+
+(1, '10', '229', '1394', '0101001002', 'GOVINDNAGAR', 1, None, datetime.datetime(2016, 7, 16, 11, 34, 41))
+(2, '10', '229', '1381', '0101001003', 'NEIL KENDRA', 1, None, datetime.datetime(2016, 7, 16, 11, 34, 23))
+(3, '01', '0101', '0101001', '0101001005', 'BEODNABAD', 1, None, datetime.datetime(2016, 7, 16, 13, 13, 56))
+(4, '01', '0101', '0101001', '0101001008', 'SIPPIGHAT', 1, None, datetime.datetime(2016, 7, 16, 13, 13, 56))
+(5, '01', '0101', '0101001', '0101001009', 'SHYAM NAGAR', 1, None, datetime.datetime(2016, 7, 16, 13, 13, 56))
+(6, '01', '0101', '0101001', '0101001011', 'CALICUT', 1, None, datetime.datetime(2016, 7, 16, 13, 13, 56))
+(7, '01', '0101', '0101002', '0101002001', 'FERRARAGUNJ', 1, None, datetime.datetime(2016, 7, 16, 13, 13, 56))
+(8, '01', '0101', '0101002', '0101002002', 'BINDRABAN', 1, None, datetime.datetime(2016, 7, 16, 13, 13, 56))
+(9, '01', '0101', '0101002', '0101002003', 'WIMBERLYGUNJ', 1, None, datetime.datetime(2016, 7, 16, 13, 13, 56))
+(10, '01', '0101', '0101002', '0101002004', 'MANNARGHAT', 1, None, datetime.datetime(2016, 7, 16, 13, 13, 56))

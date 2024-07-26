@@ -1,0 +1,13 @@
+table name =  dbt_roles
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('title', 'varchar(100)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, 'Application Administrator', 1, datetime.datetime(2016, 7, 28, 11, 27, 15), None)
+(3, 'Central Administrator', 1, datetime.datetime(2016, 7, 4, 13, 21, 37), None)
+(4, 'Scheme Owner', 1, datetime.datetime(2017, 6, 27, 7, 32, 50), None)
+(6, 'Ministry User', 0, datetime.datetime(2017, 6, 27, 9, 30), None)

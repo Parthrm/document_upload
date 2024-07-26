@@ -1,0 +1,21 @@
+table name =  dbt_home_page_master_data_current_year
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('total_fund_transfer', 'varchar(50)', 'YES', '', None, '')
+('aadhar_based_fund', 'varchar(50)', 'YES', '', None, '')
+('non_aadhar_based_fund', 'varchar(50)', 'YES', '', None, '')
+('total_saving', 'varchar(50)', 'YES', '', None, '')
+('total_benificary', 'varchar(50)', 'YES', '', None, '')
+('beneficiary_in_cash', 'varchar(50)', 'YES', '', None, '')
+('beneficiary_in_kind', 'varchar(50)', 'YES', '', None, '')
+('beneficiary_other', 'varchar(50)', 'YES', '', None, '')
+('number_of_departments', 'varchar(50)', 'YES', '', None, '')
+('number_of_schemes', 'varchar(50)', 'YES', '', None, '')
+('total_states', 'varchar(50)', 'YES', '', None, '')
+('total_district', 'varchar(50)', 'YES', '', None, '')
+('total_village', 'varchar(50)', 'YES', '', None, '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+('status', 'int(1)', 'YES', '', None, '')
+
+(1, '15856628908.96', '1714083565', '7332916210.96', '1382926', '7207158', '3569386', '1551296', '141', '100', '203', None, None, None, datetime.datetime(2018, 2, 20, 10, 51, 3), 1)

@@ -1,0 +1,22 @@
+table name =  dbt_state
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('state_code', 'int(11)', 'NO', '', None, '')
+('state_name', 'varchar(100)', 'NO', '', None, '')
+('state_short_name', 'varchar(10)', 'NO', '', None, '')
+('isstate', 'varchar(3)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, 35, 'ANDAMAN AND NICOBAR ISLANDS', '', 'no', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))
+(2, 28, 'ANDHRA PRADESH', '', 'yes', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))
+(3, 12, 'ARUNACHAL PRADESH', '', 'yes', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))
+(4, 18, 'ASSAM', '', 'yes', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))
+(5, 10, 'BIHAR', '', 'yes', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))
+(6, 4, 'CHANDIGARH', '', 'no', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))
+(7, 22, 'CHHATTISGARH', '', 'yes', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))
+(8, 26, 'DADRA AND NAGAR HAVELI', '', 'no', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))
+(9, 25, 'DAMAN AND DIU', '', 'no', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))
+(10, 7, 'DELHI', '', 'no', 1, datetime.datetime(2017, 2, 22, 5, 22, 21), datetime.datetime(2016, 12, 27, 7, 6, 43))

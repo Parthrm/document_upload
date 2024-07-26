@@ -1,0 +1,11 @@
+table name =  dbt_language
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('title', 'varchar(100)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, 'Hindi', 1, datetime.datetime(2016, 7, 4, 9, 3, 27), None)
+(2, 'English', 1, datetime.datetime(2016, 7, 4, 9, 3, 1), None)

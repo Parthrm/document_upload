@@ -1,0 +1,21 @@
+table name =  dbt_district
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('district_code', 'int(11)', 'NO', '', None, '')
+('state_code', 'int(11)', 'NO', '', None, '')
+('district_name', 'varchar(100)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, 603, 35, 'NICOBARS', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))
+(2, 632, 35, 'NORTH AND MIDDLE ANDAMAN', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))
+(3, 602, 35, 'SOUTH ANDAMANS', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))
+(4, 502, 28, 'ANANTAPUR', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))
+(5, 503, 28, 'CHITTOOR', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))
+(6, 505, 28, 'EAST GODAVARI', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))
+(7, 506, 28, 'GUNTUR', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))
+(8, 510, 28, 'KRISHNA', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))
+(9, 511, 28, 'KURNOOL', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))
+(10, 517, 28, 'PRAKASAM', 1, datetime.datetime(2016, 12, 27, 9, 39, 28), datetime.datetime(2016, 12, 27, 9, 12, 52))

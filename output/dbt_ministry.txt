@@ -1,0 +1,21 @@
+table name =  dbt_ministry
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('ministry_name', 'varchar(100)', 'NO', '', None, '')
+('translation_id', 'int(11)', 'NO', '', None, '')
+('language', 'int(11)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, 'Department of Rural Development ', 4, 2, 1, datetime.datetime(2016, 4, 1, 7, 1), None)
+(2, 'Ministry of Petroleum and Natural Gas', 3, 2, 1, datetime.datetime(2016, 7, 27, 7, 2, 19), None)
+(3, 'पेट�\x8dरोलियम �\x8fवं प�\x8dराकृतिक गैस मंत�\x8dराल', 1, 1, 1, datetime.datetime(2016, 7, 27, 7, 2, 58), None)
+(4, 'ग�\x8dरामीण विकास मंत�\x8dरालय', 1, 1, 1, datetime.datetime(2016, 7, 27, 7, 3, 42), None)
+(17, 'Ministry of Women and Child Development', 0, 2, 1, datetime.datetime(2016, 7, 30, 15, 27, 50), None)
+(18, 'Department of School Education and Literacy', 0, 2, 1, datetime.datetime(2016, 7, 30, 15, 31, 57), None)
+(19, 'Directorate of Higher Education', 0, 2, 1, datetime.datetime(2016, 7, 30, 15, 34, 49), None)
+(20, 'Ministry of Minority Affairs', 0, 2, 1, datetime.datetime(2016, 7, 30, 15, 36, 2), None)
+(21, 'Ministry of Labour and Employment', 0, 2, 1, datetime.datetime(2016, 7, 30, 15, 51, 53), None)
+(22, 'Ministry of Tribal Affairs', 0, 2, 1, datetime.datetime(2016, 7, 30, 15, 54, 23), datetime.datetime(2020, 7, 21, 8, 57, 33))

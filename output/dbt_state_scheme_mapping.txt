@@ -1,0 +1,19 @@
+table name =  dbt_state_scheme_mapping
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('state_code', 'int(11)', 'NO', '', None, '')
+('state_name', 'varchar(50)', 'NO', '', None, '')
+('scheme_id', 'int(10)', 'NO', '', None, '')
+('scheme_state_code', 'varchar(10)', 'NO', '', None, '')
+
+(4, 35, 'ANDAMAN AND NICOBAR', 2, '01')
+(5, 28, 'ANDHRA PRADESH', 2, '02')
+(6, 12, 'ARUNACHAL PRADESH', 2, '03')
+(7, 18, 'ASSAM', 2, '04')
+(8, 10, 'BIHAR', 2, '05')
+(9, 26, 'DADRA & NAGAR HAVELI', 2, '07')
+(10, 25, 'DAMAN & DIU', 2, '08')
+(11, 30, 'GOA', 2, '10')
+(12, 24, 'GUJARAT', 2, '11')
+(13, 6, 'HARYANA', 2, '12')

@@ -1,0 +1,19 @@
+table name =  dbt_block
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('title', 'varchar(100)', 'NO', '', None, '')
+('district_id', 'int(11)', 'NO', '', None, '')
+('state_code', 'varchar(50)', 'YES', '', None, '')
+('block_code', 'varchar(50)', 'YES', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, "'Chandigarh", 0, "'04", "'00277", 1, datetime.datetime(2016, 6, 28, 11, 47, 9), None)
+(2, 'Chandigarh', 55, '04', '00277', 1, datetime.datetime(2016, 6, 28, 12, 3, 38), None)
+(3, 'Chandigarh', 55, '04', '00277', 1, datetime.datetime(2016, 6, 28, 12, 3, 52), None)
+(4, 'Chandigarh', 55, '04', '00277', 1, datetime.datetime(2016, 6, 28, 12, 16, 45), None)
+(5, 'Chandigarh', 55, '04', '00277', 1, datetime.datetime(2016, 6, 28, 12, 17, 3), None)
+(6, 'Chandigarh', 55, '04', '00277', 1, datetime.datetime(2016, 6, 28, 12, 20, 32), None)
+(7, 'Chandigarh', 55, '04', '00277', 1, datetime.datetime(2016, 6, 28, 12, 20, 36), None)

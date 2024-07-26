@@ -1,0 +1,22 @@
+table name =  dbt_village
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('village_code', 'varchar(10)', 'NO', '', None, '')
+('subdistrict_code', 'varchar(10)', 'NO', '', None, '')
+('panchayat_code', 'varchar(20)', 'YES', '', None, '')
+('village_name', 'varchar(100)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, '215989', '1013', '', 'Kalapani', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)
+(2, '215990', '1013', '', 'Bhaisalotan', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)
+(3, '215991', '1013', '', 'Tharhi', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)
+(4, '215992', '1013', '', 'Pipra', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)
+(5, '215993', '1013', '', 'Kotaraha', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)
+(6, '215994', '1013', '', 'Rampurwa', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)
+(7, '215995', '1013', '', 'Lachhmipur', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)
+(8, '215996', '1013', '', 'Daruabari', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)
+(9, '215997', '1013', '', 'Santpur', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)
+(10, '215998', '1013', '', 'Soharia', 1, datetime.datetime(2016, 7, 11, 15, 48, 36), None)

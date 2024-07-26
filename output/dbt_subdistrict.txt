@@ -1,0 +1,22 @@
+table name =  dbt_subdistrict
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('subdistrict_code', 'varchar(10)', 'NO', '', None, '')
+('district_code', 'varchar(10)', 'NO', '', None, '')
+('state_code', 'varchar(10)', 'NO', '', None, '')
+('subdistrict_name', 'varchar(100)', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, '1013', '203', '', 'Sidhaw', 1, datetime.datetime(2016, 6, 30, 6, 2, 13), None)
+(2, '1014', '203', '', 'Ramnagar', 1, datetime.datetime(2016, 6, 30, 6, 2, 21), None)
+(3, '1015', '203', '', 'Gaunaha', 1, datetime.datetime(2016, 6, 30, 6, 2, 28), None)
+(4, '1016', '203', '', 'Mainatanr', 1, datetime.datetime(2016, 6, 30, 6, 2, 36), None)
+(5, '1017', '203', '', 'Narkatiaganj', 1, datetime.datetime(2016, 6, 30, 6, 2, 40), None)
+(6, '1018', '203', '', 'Lauriya', 1, datetime.datetime(2016, 6, 30, 6, 2, 48), None)
+(7, '1019', '203', '', 'Bagaha', 1, datetime.datetime(2016, 6, 30, 6, 2, 52), None)
+(8, '1020', '203', '', 'Piprasi', 1, datetime.datetime(2016, 6, 30, 6, 2, 58), None)
+(9, '1021', '203', '', 'Madhubani', 1, datetime.datetime(2016, 6, 30, 6, 2, 58), None)
+(10, '1022', '203', '', 'Bhitaha', 1, datetime.datetime(2016, 6, 30, 6, 3), None)

@@ -1,0 +1,24 @@
+table name =  dbt_content_management
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('menu_type', "enum('1','2','3')", 'YES', '', None, '')
+('sort_order', 'int(11)', 'NO', '', None, '')
+('title', 'varchar(100)', 'NO', '', None, '')
+('language', 'int(11)', 'NO', '', None, '')
+('description', 'blob', 'YES', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', '')
+('translation_id', 'int(5)', 'YES', '', None, '')
+
+(2, '', 0, 'इलेक�\x8dट�\x8dरो तकनीकी अंशांकन अवलोकन', 1, b'', 1, datetime.datetime(2017, 5, 31, 5, 23, 39), None, 1)
+(3, '1', 3, 'Schemes', 2, b'', 1, datetime.datetime(2017, 5, 31, 5, 23, 39), None, 53)
+(5, '', 0, '�\x8fसटीक�\x8dयूसी के बारे में3', 1, b'', 1, datetime.datetime(2017, 5, 31, 5, 23, 39), None, 1)
+(7, '', 0, 'सूचना का अधिकार अधिनियम 200522', 1, b'', 1, datetime.datetime(2017, 5, 31, 5, 23, 39), None, 1)
+(16, '', 0, '�\x8fसटीक�\x8dयूसी के बारे में', 1, b'', 1, datetime.datetime(2017, 5, 31, 5, 23, 39), None, 1)
+(17, '1', 2, 'About Us', 2, b'', 1, datetime.datetime(2017, 6, 27, 8, 14, 25), None, 18)
+(18, '1', 2, 'हमारे बारे में', 1, b'', 1, datetime.datetime(2017, 5, 31, 5, 23, 39), None, 1)
+(20, '', 0, 'नागरिक', 1, b'', 1, datetime.datetime(2017, 5, 31, 5, 23, 39), None, 1)
+(21, '2', 1, 'RTI', 2, b'<p><strong>Contact Address:</strong></p>\r\n\r\n<p>DBT Cell</p>\r\n\r\n<p>&lt;Address&gt;</p>\r\n\r\n<p><strong>Submission of Application Under RTI Act</strong></p>\r\n\r\n<p>Application for information under RTI Act, 2005 from DBT Cell may addressed to Central Public Information Officer, DBT Cell, &lt;Address&gt; clearly specifying the information required. DBT Cell. The fee of Rs. 10/- (Rupees Ten only) in respect of such application is to be made by way of India Postal Order / Bank Draft/ Banker&#39;s Cheque payable to &quot; &lt;officer detail&gt;&quot;.</p>\r\n\r\n<p><strong>Details of CPIO &amp; FAA of DBT Cell of State</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n', 1, datetime.datetime(2017, 6, 13, 5, 16, 49), None, 22)
+(22, '2', 1, 'आर टी आई', 1, b'', 1, datetime.datetime(2017, 5, 31, 5, 23, 39), None, 1)

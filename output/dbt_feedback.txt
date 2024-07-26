@@ -1,0 +1,24 @@
+table name =  dbt_feedback
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('type', 'int(2)', 'NO', '', None, '')
+('name', 'varchar(50)', 'NO', '', None, '')
+('email', 'varchar(50)', 'NO', '', None, '')
+('mobile', 'varchar(15)', 'NO', '', None, '')
+('details', 'blob', 'NO', '', None, '')
+('status', 'int(11)', 'NO', '', None, '')
+('created_by', 'int(11)', 'NO', '', None, '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', 'on update current_timestamp()')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, 2, 'JosephTraut', 'peter.jakob@forsindustrier.se', '312746647', b' Hey Look what we take against you! an curiousoffer \r\n Are you in?  \r\n \r\n \r\nhttp://bit.ly/2HUdBnn', 1, 0, datetime.datetime(2018, 12, 9, 20, 35, 7), None)
+(2, 2, 'Michaelsew', 'cassinomag@gmail.com', '164453632', b' Hi Big name recommendation ! an fascinatingprovide \r\n Allowed click \r\n \r\n \r\nhttp://bit.ly/2Uz0puN', 1, 0, datetime.datetime(2018, 12, 17, 3, 17, 12), None)
+(3, 2, 'Garrybus', 'ivostankovart@gmail.com', '158344755', b"  Look what we put conducive to you! openrun down up after at one's fingertips \r\n True click on the locale subordinate to to in environment  \r\n \r\n \r\nhttp://bit.ly/2rKDzDp", 1, 0, datetime.datetime(2018, 12, 21, 12, 16, 37), None)
+(4, 2, 'WilliamRic', 'willpines1@gmail.com', '157412438', b' Hey Look what we bear looking inasmuch as you! an unexcelledplain up after acquiring \r\n Are you in?  \r\n \r\n \r\nhttp://bit.ly/2EJtVbK', 1, 0, datetime.datetime(2018, 12, 28, 8, 26, 3), None)
+(5, 2, 'Jasonovery', 'pieces.suzuki.cannes@gmail.com', '166275683', b' Hey Pietistic hearsay ! an superiorsignify up in the waiting of white sale \r\n Plumb up and down click on the element distress of the tan to prepare  \r\n \r\n \r\nhttps://drive.google.com/file/d/1ZtOHdGaJPBEwVfXMcoEQOJaum6PFkerz/preview', 1, 0, datetime.datetime(2019, 1, 1, 17, 58, 48), None)
+(6, 2, 'Cinclus', '1995vklaruku@yahoo.com', '12167786013', b'Hi! Here is  a good offers - slots, roulette and blackjack games.  Just click on the link below to qualify. http://bit.ly/2J8WjnH', 1, 0, datetime.datetime(2019, 1, 2, 4, 36, 49), None)
+(7, 2, 'RichardKnowl', 'sanmicheleprincipe@gmail.com', '274668513', b' Hy there,  Look what we have for you! a fineoffering \r\n To qualify click on the link below  \r\n \r\nhttps://drive.google.com/file/d/1HeGA8n0a3rpLm2ka5DQR0jtEJYC0Z8LU/preview', 1, 0, datetime.datetime(2019, 1, 6, 0, 33, 15), None)
+(8, 2, 'DonaldEdutt', 'elizabeth.meles@gmail.com', '177234346', b' Hy there,  What we have here is , a fineoffers \r\n Are you in?  \r\n \r\nhttps://drive.google.com/file/d/1NdR-DZ-w5iuP07CnHlZxf8ydXu90Dh6e/preview', 1, 0, datetime.datetime(2019, 1, 10, 23, 26, 55), None)
+(9, 2, 'StevenHum', 'moorpilates@gmail.com', '171485183', b'  What we have here is , an compellingdonation \r\n Straight click on the tie up under to qualify    http://servicerubin.ru', 1, 0, datetime.datetime(2019, 1, 23, 0, 48, 11), None)
+(10, 2, 'JamesSmugs', 'jogabolafutsal@gmail.com', '263747232', b' Hi Look what we have looking for you! a gooddonation \r\n Are you in?    http://bit.ly/2S7dw8e', 1, 0, datetime.datetime(2019, 1, 27, 7, 43, 32), None)

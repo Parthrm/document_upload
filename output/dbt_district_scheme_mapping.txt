@@ -1,0 +1,20 @@
+table name =  dbt_district_scheme_mapping
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('state_code', 'int(11)', 'NO', '', None, '')
+('district_code', 'int(11)', 'NO', '', None, '')
+('district_name', 'varchar(50)', 'NO', '', None, '')
+('scheme_district_code', 'varchar(10)', 'NO', '', None, '')
+('scheme_id', 'int(10)', 'NO', '', None, '')
+
+(49, 3, 29, '', '05', 1)
+(51, 3, 34, '', '12', 1)
+(95, 10, 188, '', '29', 1)
+(96, 10, 611, '', '70', 1)
+(97, 10, 189, '', '01', 1)
+(98, 10, 190, '', '07', 1)
+(99, 10, 191, '', '03', 1)
+(100, 10, 200, '', '49', 1)
+(101, 22, 374, '', '02', 1)
+(102, 22, 636, '', '03', 1)

@@ -1,0 +1,26 @@
+table name =  dbt_audit_log
+
+Describing table :
+('id', 'int(11)', 'NO', 'PRI', None, 'auto_increment')
+('application_type', 'varchar(100)', 'NO', '', None, '')
+('userid', 'varchar(10)', 'NO', '', None, '')
+('ipaddress', 'varchar(15)', 'NO', '', None, '')
+('description', 'blob', 'YES', '', None, '')
+('ministry_id', 'int(10)', 'NO', '', '0', '')
+('scheme_id', 'int(10)', 'NO', '', '0', '')
+('applicable_scheme_id', 'int(10)', 'YES', '', '0', '')
+('role_id', 'int(2)', 'NO', '', '0', '')
+('type_print', 'int(1)', 'NO', '', '0', '')
+('created', 'timestamp', 'NO', '', 'current_timestamp()', '')
+('updated', 'timestamp', 'NO', '', 'current_timestamp()', '')
+
+(1, 'User', '1', '164.100.177.10', b'Add New User </br>Role : Application Administrator</br>User Name : administrator</br>First Name : Admin</br>Last Name : admin</br>Email : admin@statedbtportal.com</br>Mobile : 9555395993', 0, 0, 0, 0, 0, datetime.datetime(2017, 6, 28, 10, 48, 7), None)
+(2, 'User', '1', '10.155.4.29', b'Add New User </br>Role : Central Administrator</br>User Name : dpse</br>First Name : Director </br>Last Name : DPSE</br>Email : dir-dpse.goa@nic.in</br>Mobile : 9423060891', 0, 0, 0, 0, 0, datetime.datetime(2018, 2, 12, 10, 44, 44), None)
+(3, 'User', '1', '10.155.4.29', b'Add New User </br>Role : Application Administrator</br>User Name : dpseadmin</br>First Name : Director</br>Last Name : DPSE</br>Email : dir-dpse.goa@nic.in</br>Mobile : 9423060891', 0, 0, 0, 0, 0, datetime.datetime(2018, 2, 12, 10, 48, 22), None)
+(4, 'Ministry', '34', '10.155.4.29', b'Status : Inactivated </br>Ministry : Ministry of Development of North Eastern Region, </br>', 0, 0, 0, 0, 0, datetime.datetime(2018, 2, 12, 11, 1, 38), None)
+(5, 'User', '34', '49.35.235.154', b'Add New User </br>Role : Scheme Owner</br>User Name : Socialwelfare</br>First Name : Mandar</br>Last Name : Naik</br>Email : socialwelfaregoa@rediffmail.com</br>Mobile : 9764363411', 0, 0, 0, 0, 0, datetime.datetime(2018, 2, 13, 7, 24, 14), None)
+(6, 'Scheme', '34', '49.35.251.225', b'Add Scheme</br>Department:Department of Social Justice and Empowerment<br/>Scheme Name:Post Matric Scholarship for OBC<br/>Benefit Type:Cash<br/>Scheme Group:SCHOLARSHIP SCHEME', 0, 0, 0, 0, 0, datetime.datetime(2018, 2, 13, 7, 42, 32), None)
+(7, 'User', '34', '49.35.58.205', b'Add New User </br>Role : Application Administrator</br>User Name : Tribalwelfare</br>First Name : Sagar</br>Last Name : Velerkar</br>Email : dir-tw.goa@nic.in</br>Mobile : 7774847350', 0, 0, 0, 0, 0, datetime.datetime(2018, 2, 20, 9, 49, 24), None)
+(8, 'Scheme', '36', '49.35.23.249', b'Add Scheme</br>Department:Ministry of Tribal Affairs<br/>Scheme Name:Post Matric Scholarship to the students belonging to Scheduled Tribes for studies in India<br/>Benefit Type:Cash<br/>Scheme Group:SCHOLARSHIP SCHEME', 0, 0, 0, 0, 0, datetime.datetime(2018, 2, 20, 10, 9, 4), None)
+(9, 'Scheme', '36', '49.35.50.101', b'Add Scheme</br>Department:Ministry of Tribal Affairs<br/>Scheme Name:Centrally Sponsored Scheme of Pre- Matric Scholarship for students belonging to Scheduled Tribes studying in Class IXth  and Xth.<br/>Benefit Type:Cash<br/>Scheme Group:SCHOLARSHIP SCHEME', 0, 0, 0, 0, 0, datetime.datetime(2018, 2, 20, 10, 18, 7), None)
+(10, 'Section I - General', '36', '49.35.9.233', b'Section 1 General Scheme Data</br>Scheme Name:Post Matric Scholarship to the students belonging to Scheduled Tribes for studies in India<br/>Ministry Name:Ministry of Tribal Affairs<br/>Whether scheme have been notified under State Aadhaar Act:Yes<br/>Whether on boarded on State DBT Portal (Y/N):Yes<br/>Beneficiary digitization (Y/N):No<br/>Whether schemes specific MIS prepared:Online System / MIS Implemetation at field level to transfer benefit (Roll out)<br/>Whether scheme specific MIS integrated with State DBT Portal (Y/N):No<br/>Overall Scheme Budget (in Rs.):51100000<br/>DBT Applicable Component Fund Allocation:51100000<br/>Funding Pattern of Scheme (Center Share:State Share):100%<br/>', 0, 0, 0, 0, 0, datetime.datetime(2018, 2, 20, 10, 39, 2), None)

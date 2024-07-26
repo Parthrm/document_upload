@@ -1,0 +1,17 @@
+table name =  dbt_panchayat_scheme_mapping
+
+Describing table :
+('id', 'int(11)', 'NO', '', None, '')
+('state_code', 'varchar(10)', 'NO', '', None, '')
+('district_code', 'varchar(10)', 'NO', '', None, '')
+('block_code', 'varchar(20)', 'YES', '', None, '')
+('panchayat_code', 'varchar(20)', 'YES', '', None, '')
+('panchayat_name', 'varchar(50)', 'NO', '', None, '')
+('scheme_panchayat_code', 'bigint(20)', 'YES', '', None, '')
+('scheme_id', 'int(10)', 'NO', '', None, '')
+
+(4, '20', '350', '2547', '25471', 'Sarwan', 1000, 1)
+(6, '20', '350', '2547', '3154004014', 'Bhandaro', 1001, 1)
+(9, '9', '196', '993', '3171002016', 'SAKALDIHA', 2000, 1)
+(10, '10', '231', '1434', '0503007014', 'ANDHARI', 3000, 1)
+(11, '10', '231', '1434', '0503007011', 'Perhap', 3001, 1)
