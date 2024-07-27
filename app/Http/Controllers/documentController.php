@@ -39,7 +39,7 @@ class documentController extends Controller
 
     public function store(Request $request)
     {
-        dd($request);
+        // dd($request);
         $form_fields = $request->validate([
             // 'title' => ['required',Rule::unique('document','title')],
             'title' => 'required',
@@ -55,7 +55,7 @@ class documentController extends Controller
         // dd($form_fields);
         // Additional logic (e.g., storing file information in the database)
         document::create($form_fields);
-        return redirect('document.success');
+        return view('document.success');
     }
     public function success(){
         return view('document.success');

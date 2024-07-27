@@ -94,12 +94,14 @@ def execute_query(query, params=None):
 
 # Example usage
 # Replace 'your_query_here' with your actual SQL query
-# custom_query = "SELECT COUNT(*) FROM dbt_audit_log"
-# execute_query(custom_query)
+custom_query = "Desc dbt_agriculturetechnolog_10_2017_2018"
+result = execute_query(custom_query)
+
+for i in result:
+    print(i[0])
 
 # input_file = open('input.txt','r')
 # output_file = open('output.txt','w')
-
 
 
 
@@ -136,22 +138,22 @@ tables = [
 ]
 
 # file = open(tables[0][0]+'.txt','w')
-for table in tables:
-    table_name = table[0]
+# for table in tables:
+#     table_name = table[0]
 
-    file = open(table_name+'.txt','w')
+#     file = open(table_name+'.txt','w')
 
-    print("table name = ",table_name,file=file,end="\n\n")
+#     print("table name = ",table_name,file=file,end="\n\n")
 
-    query = "Describe "+table_name;
-    print("Describing table :",file=file)
-    result = execute_query(query)
-    print(*result,sep="\n",file=file,end="\n\n")
+#     query = "Describe "+table_name;
+#     print("Describing table :",file=file)
+#     result = execute_query(query)
+#     print(*result,sep="\n",file=file,end="\n\n")
 
 
-    query = "SELECT * FROM "+table_name+" LIMIT 10";
-    result = execute_query(query)
-    print(*result,sep="\n",file=file)
+#     query = "SELECT * FROM "+table_name+" LIMIT 10";
+#     result = execute_query(query)
+#     print(*result,sep="\n",file=file)
 
 
 
