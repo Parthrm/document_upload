@@ -35,5 +35,4 @@ Route::get('/makeStory',[successStoryController::class,'create']);
 Route::post('/storeStory',[successStoryController::class,'store']);
 
 // charts view
-Route::get('/charts',function(){return view('components.charts.chart-renderer');});
 Route::get('/all',function(){return view('components.charts.all');});

@@ -17,6 +17,7 @@
             <a href="/index" class="text-lg bg-white rounded-lg transition-all duration-200 p-3 border-2 border-black border-solid font-bold hover:bg-black hover:text-white hover:scale-110">All Documents</a>
             <a href="/successStory" class="text-lg bg-white rounded-lg transition-all duration-200 p-3 border-2 border-black border-solid font-bold hover:bg-black hover:text-white hover:scale-110">All Stories</a>
             <a href="/makeStory" class="text-lg bg-white rounded-lg transition-all duration-200 p-3 border-2 border-black border-solid font-bold hover:bg-black hover:text-white hover:scale-110">Create Story</a>
+            <a href="/all" class="text-lg bg-white rounded-lg transition-all duration-200 p-3 border-2 border-black border-solid font-bold hover:bg-black hover:text-white hover:scale-110">All Charts</a>
         </nav>
     </div>
     <main class="">

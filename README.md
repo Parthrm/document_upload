@@ -1,7 +1,5 @@
-# Document Handling and Blog Posting
-This is a project made to first implement and test out 2 features that are for a separate project.
-
-The 2 features include:
+# Module Implementation Side Project
+This is a project made to first implement and test out features/modules that are needed for a separate project.
 
 ### <mark>Feature 1</mark> : Document Handling
 - be able to handle documents (pdf files) and be able to upload them to the database
@@ -20,6 +18,16 @@ Type of content that is supported is :
 - Marking
 - Embedded Video Links
 
+### <mark>Feature 3</mark> : Charts
+using API calls and data fetching, user friendly and eye catching high quality charts are implemented using **Chartjs** Library.
+
+Following are the available types of charts
+- bar chart
+- line chart
+- pie chart
+- doughnut chart
+- radar chart
+- polar area chart
 
 # SetUp Guildlines
 To setup this project locally run the following commands:
