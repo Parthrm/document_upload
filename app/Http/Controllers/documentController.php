@@ -61,22 +61,26 @@ class documentController extends Controller
         return view('document.success');
     }
 
-    public function show(String $id){
-        // $path = asset("public/storage/documents/".$url);
-        // $path = "127.0.0.1:8000\\document_upload\\public\\storage\\".$url;
+    public function show(String $id)
+{
+    // Retrieve the document using ID
+    $result = DB::table('document')->where('id', $id)->first();
 
-        // retrieve the document using ID
-        $result =  DB::table('document')->where('id',$id)->first();
-
-        // generate the file path
-        $path = public_path("storage\\".$result->path);
-
-        // check if the file exists
-        if(file_exists($path))
-        return response()->download($path,$result->title.'.pdf');
-        else
-        dd($path);
+    if (!$result) {
+        return response()->json(['error' => 'Document not found'], 404);
     }
+
+    // Generate the file path
+    $path = storage_path("app\\public\\" . $result->path);
+    // dd($path);
+    // Check if the file exists
+    if (file_exists($path)) {
+        return response()->download($path, $result->title . '.pdf');
+    } else {
+        return response()->json(['error' => 'File not found'], 404);
+    }
+}
+
 
     public function destroy($id)
     {
