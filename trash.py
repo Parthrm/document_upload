@@ -1,4 +1,29 @@
-{
+"""from bs4 import BeautifulSoup
+import json
+
+html_content = "".join(open('trash.html','r').readlines())
+html_content= html_content.replace("\n","")
+of = open("output.txt",'w')
+soup = BeautifulSoup(html_content, 'html.parser')
+departments = {}
+department_id = 1
+
+for department_div in soup.find_all("div", class_="col-md-6"):
+    department_name = department_div.find("div", class_="pageSubHeading borderBottom").text.split(':')[0].strip()
+    schemes = [li.text for li in department_div.find_all("li")]
+    departments[department_id] = schemes
+    department_id += 1
+
+json_output = json.dumps(departments, indent=4)
+print(json_output,file=of)
+"""
+
+from flask import Flask, jsonify, request
+
+app = Flask(__name__)
+
+# The storage dictionary containing department IDs and their respective schemes
+storage_dictionary = {
     "1": [
         "Agricultural Extension",
         "AgEdn - National Talent Scholarship UG",
@@ -420,3 +445,21 @@
         "Mission Vatsalya -Facilities to Beneficiaries (Sponsorship)"
     ]
 }
+
+
+@app.route('/schemes/<int:department_id>', methods=['GET'])
+def get_schemes(department_id):
+    department_id_str = str(department_id)
+    if department_id_str in storage_dictionary:
+        return jsonify({
+            'department_id': department_id_str,
+            'schemes': storage_dictionary[department_id_str]
+        })
+    else:
+        return jsonify({
+            'error': 'Department ID not found'
+        }), 404
+
+if __name__ == '__main__':
+    app.run(debug=True,port=5001)
+    

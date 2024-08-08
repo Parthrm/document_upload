@@ -15,8 +15,24 @@ function random_list(min, max, size) {
     return randomNumbers;
 }
 
+let customCanvasBackgroundColor = {
+    id: 'customCanvasBackgroundColor',
+    beforeDraw: (chart, args, options) => {
+      const {ctx} = chart;
+      ctx.save();
+      ctx.globalCompositeOperation = 'destination-over';
+      ctx.fillStyle = options.color || '#99ffff';
+      ctx.fillRect(0, 0, chart.width, chart.height);
+      ctx.restore();
+    }
+  };
+
+
 let options_pie = {
     plugins: {
+        customCanvasBackgroundColor: {
+            color: 'white',
+          },
         datalabels: {
             color: '#000',
             font:{
@@ -24,15 +40,15 @@ let options_pie = {
                 size:18
             }
         },
-        title:{
-            text:"Male-Female Distribution",
-            display:true,
-            color:"black",
-            font:{
-                weight:"bold",
-                size:24
-            }
-        },
+        // title:{
+        //     text:"Male-Female Distribution",
+        //     display:true,
+        //     color:"black",
+        //     font:{
+        //         weight:"bold",
+        //         size:24
+        //     }
+        // },
         legend: {
             position: "right",
             labels: {
@@ -63,6 +79,9 @@ let options_line = {
         },
     },
     plugins: {
+        customCanvasBackgroundColor: {
+            color: 'white',
+          },
         datalabels: {
             color: '#000',
             font:{
@@ -71,15 +90,15 @@ let options_line = {
             }
           },
     
-        title:{
-            text:"Male-Female Distribution",
-            display:true,
-            color:"black",
-            font:{
-                weight:"bold",
-                size:24
-            }
-        },
+        // title:{
+        //     text:"Male-Female Distribution",
+        //     display:true,
+        //     color:"black",
+        //     font:{
+        //         weight:"bold",
+        //         size:24
+        //     }
+        // },
 
         legend: {
             position: "right",
@@ -113,21 +132,20 @@ let options_bar = {
     plugins: {
         datalabels: {
             color: '#000',
-            font:{
-                weight:"bold",
-                size:18
+            font: {
+                weight: "bold",
+                size: 18
             }
         },
-        title:{
-            text:"Male-Female Distribution",
-            display:true,
-            color:"black",
-            font:{
-                weight:"bold",
-                size:24
-            }
-        },
-
+        // title: {
+        //     text: "Male-Female Distribution",
+        //     display: true,
+        //     color: "black",
+        //     font: {
+        //         weight: "bold",
+        //         size: 24
+        //     }
+        // },
         legend: {
             position: "right",
             labels: {
@@ -137,6 +155,9 @@ let options_bar = {
         tooltip: {
             enabled: true,
         },
+        customCanvasBackgroundColor: {
+            color: '#fff', // Custom color for the background
+        }
     },
 };
 
@@ -145,12 +166,18 @@ let chart_obj;
 function load_chart(chart_ele,type,data) {
 
     let data_copy = JSON.parse(JSON.stringify(data));
+
+    try {
+        chart_obj.destroy();
+    } catch (error) {}
+
     color_loader(data_copy);
     switch (type) {
         case "bar":{
             for (let i = 0; i < data_copy.datasets.length; i++) {
                 data_copy.datasets[i].borderWidth = 2;
             }
+            // console.log(data_copy);
             chart_obj = new Chart(chart_ele, {
                 type: "bar",
                 data: data_copy,
@@ -202,7 +229,7 @@ function load_chart(chart_ele,type,data) {
                 options: options_pie,
             });
             break;}
-        case "polararea":{
+        case "polarArea":{
             for (let i = 0; i < data_copy.datasets.length; i++) {
                 data_copy.datasets[i].borderWidth = 3;
                 data_copy.datasets[i].borderColor = "white";
@@ -219,8 +246,6 @@ function load_chart(chart_ele,type,data) {
             break;
     }
 }
-
-
 
 function color_loader(data) {
     for (let i = 0; i < data.datasets.length; i++) {
@@ -240,3 +265,4 @@ function downloadPDF(){
     pdf.save('chart.pdf');
 }
 Chart.register(ChartDataLabels);
+Chart.register(customCanvasBackgroundColor);

@@ -20,6 +20,7 @@
             <a href="/all" class="text-lg bg-white rounded-lg transition-all duration-200 p-3 border-2 border-black border-solid font-bold hover:bg-black hover:text-white hover:scale-110">All Charts</a>
         </nav>
     </div>
+    <div class="flex-row-reverse"></div>
     <main class="">
         {{$slot}}
     </main>

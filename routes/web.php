@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChartAPIController;
 use App\Http\Controllers\documentController;
 use App\Http\Controllers\successStoryController;
 use Illuminate\Support\Facades\Route;
@@ -36,3 +37,10 @@ Route::post('/storeStory',[successStoryController::class,'store']);
 
 // charts view
 Route::get('/all',function(){return view('components.charts.all');});
+
+// charts editor view
+Route::get('/chart-editor',function(){return view('chart-editor');});
+
+Route::get('/schemes/{id}', [ChartAPIController::class, 'getSchemes']);
+
+Route::get('/chart-data', [ChartAPIController::class, 'getData']);
