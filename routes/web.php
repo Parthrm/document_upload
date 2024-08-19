@@ -1,9 +1,12 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ChartAPIController;
 use App\Http\Controllers\documentController;
 use App\Http\Controllers\successStoryController;
-use Illuminate\Support\Facades\Route;
+
+Route::get('/generate-report', [ReportController::class,'generateReport']);
 
 Route::get('/index', [documentController::class,'show_all']);
 Route::get('/', [documentController::class,'show_all']);

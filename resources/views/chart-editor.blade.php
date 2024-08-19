@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charts Page</title>
-    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="{{ asset('js/jquery.js') }}"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
+
 <body class="bg-gray-900 text-white">
     <div class="min-h-screen flex justify-between p-4">
         <div class="w-72">
@@ -28,46 +30,48 @@
                         <option value="10">Department of Ex Servicemen Welfare</option>
                         <option value="11">Department of Fertilizers</option>
                         <option value="12">Department of Financial Services</option>
-                        <option value="13">Department of Food and Public Distribution</option>
-                        <option value="14">Department of Health and Family Welfare</option>
-                        <option value="15">Department of Health Research</option>
-                        <option value="16">Department of Higher Education</option>
-                        <option value="17">Department of Home</option>
-                        <option value="18">Department of Internal Security</option>
-                        <option value="19">Department of Jammu and Kashmir and Ladakh Affairs</option>
-                        <option value="20">Department of Pharmaceuticals</option>
-                        <option value="21">Department of Public Enterprises</option>
-                        <option value="22">Department of Rural Development</option>
-                        <option value="23">Department of School Education and Literacy</option>
-                        <option value="24">Department of Science and Technology</option>
-                        <option value="25">Department of Scientific and Industrial Research</option>
-                        <option value="26">Department of Social Justice and Empowerment</option>
-                        <option value="27">Department of Space</option>
-                        <option value="28">Department of Sports</option>
-                        <option value="29">Department of Water Resources, River Development and Ganga Rejuvenation</option>
-                        <option value="30">Department of Youth Affairs</option>
-                        <option value="31">Ministry of AYUSH</option>
-                        <option value="32">Ministry of Culture</option>
-                        <option value="33">Ministry of Development of North Eastern Region</option>
-                        <option value="34">Ministry of Earth Science</option>
-                        <option value="35">Ministry of Electronics and Information Technology</option>
-                        <option value="36">Ministry of Environment Forest and Climate Change</option>
-                        <option value="37">Ministry of External Affairs</option>
-                        <option value="38">Ministry of Heavy Industries</option>
-                        <option value="39">Ministry of Housing and Urban Affairs</option>
-                        <option value="40">Ministry of Information and Broadcasting</option>
-                        <option value="41">Ministry of Labour and Employment</option>
-                        <option value="42">Ministry of Micro Small and Medium Enterprises</option>
-                        <option value="43">Ministry of Minority Affairs</option>
-                        <option value="44">Ministry of New and Renewable Energy</option>
-                        <option value="45">Ministry of Petroleum and Natural Gas</option>
-                        <option value="46">Ministry of Railways</option>
-                        <option value="47">Ministry of Skill Development and Entrepreneurship</option>
-                        <option value="48">Ministry of Statistics and Programme Implementation</option>
-                        <option value="49">Ministry of Textiles</option>
-                        <option value="50">Ministry of Tourism</option>
-                        <option value="51">Ministry of Tribal Affairs</option>
-                        <option value="52">Ministry of Women and Child Development</option>
+                        <option value="13">Department of Fisheries</option>
+                        <option value="14">Department of Food and Public Distribution</option>
+                        <option value="15">Department of Health and Family Welfare</option>
+                        <option value="16">Department of Health Research</option>
+                        <option value="17">Department of Higher Education</option>
+                        <option value="18">Department of Home</option>
+                        <option value="19">Department of Internal Security</option>
+                        <option value="20">Department of Jammu and Kashmir and Ladakh Affairs</option>
+                        <option value="21">Department of Pharmaceuticals</option>
+                        <option value="22">Department of Public Enterprises</option>
+                        <option value="23">Department of Rural Development</option>
+                        <option value="24">Department of School Education and Literacy</option>
+                        <option value="25">Department of Science and Technology</option>
+                        <option value="26">Department of Scientific and Industrial Research</option>
+                        <option value="27">Department of Social Justice and Empowerment</option>
+                        <option value="28">Department of Space</option>
+                        <option value="29">Department of Sports</option>
+                        <option value="20">Department of Water Resources, River Development and Ganga Rejuvenation
+                        </option>
+                        <option value="31">Department of Youth Affairs</option>
+                        <option value="32">Ministry of AYUSH</option>
+                        <option value="33">Ministry of Culture</option>
+                        <option value="34">Ministry of Development of North Eastern Region</option>
+                        <option value="35">Ministry of Earth Science</option>
+                        <option value="36">Ministry of Electronics and Information Technology</option>
+                        <option value="37">Ministry of Environment Forest and Climate Change</option>
+                        <option value="38">Ministry of External Affairs</option>
+                        <option value="39">Ministry of Heavy Industries</option>
+                        <option value="40">Ministry of Housing and Urban Affairs</option>
+                        <option value="41">Ministry of Information and Broadcasting</option>
+                        <option value="42">Ministry of Labour and Employment</option>
+                        <option value="43">Ministry of Micro Small and Medium Enterprises</option>
+                        <option value="44">Ministry of Minority Affairs</option>
+                        <option value="45">Ministry of New and Renewable Energy</option>
+                        <option value="46">Ministry of Petroleum and Natural Gas</option>
+                        <option value="47">Ministry of Railways</option>
+                        <option value="48">Ministry of Skill Development and Entrepreneurship</option>
+                        <option value="49">Ministry of Statistics and Programme Implementation</option>
+                        <option value="50">Ministry of Textiles</option>
+                        <option value="51">Ministry of Tourism</option>
+                        <option value="52">Ministry of Tribal Affairs</option>
+                        <option value="53">Ministry of Women and Child Development</option>
                     </select>
                 </div>
             </div>
@@ -88,7 +92,7 @@
             </div>
             <div id="sub-distributions" class="border border-gray-600 rounded-lg p-3 my-3 shadow-lg">
                 <div class="text-center mb-3 font-bold text-lg">Sub Distributions</div>
-                <div id="area-selection" >
+                <div id="area-selection">
                     <div class="font-semibold mb-2">Area Wise:</div>
                     <select id="area-type" class="bg-gray-800 text-white w-full px-2 py-1 rounded-md text-sm">
                         <option value="District">District</option>
@@ -96,7 +100,7 @@
                         <option value="Urban-Rural">Urban-Rural</option>
                     </select>
                 </div>
-                <div id="graph-selection" >
+                <div id="graph-selection">
                     <div class="font-semibold mb-2">Graph Type:</div>
                     <select id="graph-type" class="bg-gray-800 text-white w-full px-2 py-1 rounded-md text-sm">
                         <option value="bar">Bar</option>
@@ -108,24 +112,32 @@
                     </select>
                 </div>
             </div>
-            <button class="bg-green-600 text-white w-full py-2 rounded-md shadow-lg hover:bg-green-700 transition" id="gen_chart">
+            <button class="bg-green-600 text-white w-full py-2 rounded-md shadow-lg hover:bg-green-700 transition"
+                id="gen_chart">
                 Generate Chart
             </button>
+            <button class="bg-blue-600 text-white w-full py-2 rounded-md shadow-lg hover:bg-blue-700 transition mt-4"
+                id="gen_report">
+                Generate Report
+            </button>
+
         </div>
         <div class="flex-1 m-3 bg-gray-800 text-white flex flex-col p-4 rounded-lg shadow-lg ">
             <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-4">
                 <div class="bg-slate-600 text-white text-center font-bold text-2xl py-3 " id="title">
                     Select options and Generate Chart
                 </div>
-                <div id="chart-holder" class="text-black relative " >
-                    <span id="chart-text" class="absolute top-[50%] left-[40%] z-0" >Generated Chart will be shown here</span>
-                    {{ view('components.charts.chart-renderer', ['id' => 'chart'])}}
+                <div id="chart-holder" class="text-black relative ">
+                    <span id="chart-text" class="absolute top-[50%] left-[40%] z-0">Generated Chart will be shown
+                        here</span>
+                    {{ view('components.charts.chart-renderer', ['id' => 'chart']) }}
                 </div>
             </div>
         </div>
     </div>
     {{ view('components.charts.links') }}
 </body>
+
 </html>
 
 <style>
@@ -141,7 +153,7 @@
         color: rgb(255, 0, 0);
     }
 
-    #years input[type="checkbox"]:checked + span {
+    #years input[type="checkbox"]:checked+span {
         background-color: rgb(255, 0, 0);
         color: black;
     }
@@ -150,7 +162,7 @@
         background-color: #171717;
         border: 1px solid #646464;
         border-radius: 4px;
-        
+
     }
 
     .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -164,11 +176,11 @@
         height: 100%;
         border-left: 1px solid #333;
     }
-    
+
     .select2-container--default .select2-results__option--highlighted[aria-selected] {
         background-color: #4d4d4da9;
     }
-    
+
     .select2-dropdown {
         background-color: #f0f0f0;
         color: #000;
@@ -187,28 +199,27 @@
             const $select2 = $('#scheme');
 
             // Clear existing options
-            $select2.empty(); 
+            $select2.empty();
 
             // API call to get the schemes
             $.ajax({
-                url: '/schemes/'+selectedValue,
+                url: '/schemes/' + selectedValue,
                 type: 'GET',
                 success: function(response) {
                     response.schemes.forEach(function(scheme) {
-                            const $option = $('<option>').text(scheme).val(scheme);
-                            $select2.append($option);
+                        const $option = $('<option>').text(scheme).val(scheme);
+                        $select2.append($option);
                     });
                 },
                 error: function(error) {
-                    console.log("error occurred ->",error);
+                    console.log("error occurred ->", error);
                 }
             });
         });
 
         let data = {
             labels: ["2019-20", "2020-21", "2021-22", "2022-23", "2023-24"],
-            datasets: [
-                {
+            datasets: [{
                     label: "Males",
                     data: random_list(1000, 2000, 5),
                     borderWidth: 2,
@@ -231,12 +242,12 @@
         });
 
 
-        $('#gen_chart').on('click',function(){
-            const dept =  $('#department').val();
-            const scheme =  $('#scheme').val();
-            const distribution_type =  $('#distribution-type').val();
-            const area_type =  $('#area-type').val();
-            
+        $('#gen_chart').on('click', function() {
+            const dept = $('#department').val();
+            const scheme = $('#scheme').val();
+            const distribution_type = $('#distribution-type').val();
+            const area_type = $('#area-type').val();
+
             $.ajax({
                 url: '/chart-data',
                 type: 'GET',
@@ -247,14 +258,25 @@
                     'Area-Type': area_type
                 },
                 success: function(response) {
-                    
-                    switch(distribution_type) {
-                        case '1': $('#title').text('Area Wise Distribution'); break;
-                        case '2': $('#title').text('Aadhar Seeded Distribution'); break;
-                        case '3': $('#title').text('Bank account linked Distribution'); break;
-                        case '4': $('#title').text('Male-Female Distribution'); break;
-                        case '5': $('#title').text('Time Beneficiary Count'); break;
-                        default:$('#title').text('Error occurred');
+
+                    switch (distribution_type) {
+                        case '1':
+                            $('#title').text('Area Wise Distribution');
+                            break;
+                        case '2':
+                            $('#title').text('Aadhar Seeded Distribution');
+                            break;
+                        case '3':
+                            $('#title').text('Bank account linked Distribution');
+                            break;
+                        case '4':
+                            $('#title').text('Male-Female Distribution');
+                            break;
+                        case '5':
+                            $('#title').text('Time Beneficiary Count');
+                            break;
+                        default:
+                            $('#title').text('Error occurred');
                     }
 
                     $('#chart-text').hide();
@@ -262,7 +284,7 @@
                     load_chart(chartEle, $('#graph-type').val(), response);
                 },
                 error: function(error) {
-                    console.log("error occurred ->",error);
+                    console.log("error occurred ->", error);
                 }
             });
 
@@ -281,4 +303,17 @@
         $('#graph-type').select2();
 
     });
+    $('#gen_report').on('click', function() {
+    const dept = $('#department').val();
+    const scheme = $('#scheme').val();
+    const distributionType = $('#distribution-type').val();
+    const areaType = $('#area-type').val();
+
+    // Open the report in a new tab
+    window.open(
+        `/generate-report?Department=${dept}&Scheme=${scheme}&Distribution-Type=${distributionType}&Area-Type=${areaType}`,
+        '_blank'
+    );
+});
+
 </script>
