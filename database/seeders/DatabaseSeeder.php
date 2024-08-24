@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        User::factory(10)->create();
 
         document::factory(24)->create();
         document::factory()->create([
@@ -39,5 +39,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+        $this->call(DepartmentsTableSeeder::class);
+        $this->call(SchemesTableSeeder::class);
+        $this->call(BeneficiariesTableSeeder::class);
     }
 }

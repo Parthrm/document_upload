@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ChartAPIController extends Controller
 {
@@ -444,11 +445,12 @@ class ChartAPIController extends Controller
 
     public function getSchemes($id)
     {
+        
         $idStr = (string) $id;
         if (array_key_exists($idStr, $this->storageDictionary)) {
             return response()->json([
                 'department_id' => $idStr,
-                'schemes' => $this->storageDictionary[$idStr]
+                'schemes' => DB::table('schemes')->where('department_id','1')->select('name','id')->get()
             ]);
         } else {
             return response()->json([
@@ -538,7 +540,6 @@ class ChartAPIController extends Controller
                                 ]
                             ]);
                         # code...
-                        break;
                     case 'Urban-Rural':
                         # code...
                         break;

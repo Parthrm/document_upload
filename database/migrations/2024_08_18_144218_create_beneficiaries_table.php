@@ -13,8 +13,13 @@ return new class extends Migration
 {
     Schema::create('beneficiaries', function (Blueprint $table) {
         $table->id();
+        $table->string('name');
+        $table->string('district');
+        $table->string('taluka');
         $table->integer('department_id');
-        $table->string('scheme_name');
+        $table->string('scheme_id');
+        $table->boolean('adhaar_seeded');
+        $table->boolean('bank_seeded');
         // Add other columns as needed
         $table->timestamps();
     });

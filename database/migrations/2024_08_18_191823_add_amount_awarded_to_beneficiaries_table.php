@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('beneficiaries', function (Blueprint $table) {
-            $table->decimal('amount_awarded', 10, 2)->after('date_awarded');
-        });
+        // Schema::table('beneficiaries', function (Blueprint $table) {
+        //     $table->decimal('amount_awarded', 10, 2);
+        // });
     }
 
     /**
@@ -21,8 +21,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('beneficiaries', function (Blueprint $table) {
-            $table->dropColumn('amount_awarded');
-        });
+        // Schema::table('beneficiaries', function (Blueprint $table) {
+        //     $table->dropColumn('amount_awarded');
+        // });
+        Schema::dropIfExists('beneficiaries');
     }
 };

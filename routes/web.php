@@ -6,44 +6,28 @@ use App\Http\Controllers\ChartAPIController;
 use App\Http\Controllers\documentController;
 use App\Http\Controllers\successStoryController;
 
-Route::get('/generate-report', [ReportController::class,'generateReport']);
 
-Route::get('/index', [documentController::class,'show_all']);
+// document routes 
 Route::get('/', [documentController::class,'show_all']);
+Route::get('/upload', [documentController::class,'upload']); // return the upload form
+Route::post('/store', [documentController::class,'store']); // store the uploaded content
+Route::get('/success', [documentController::class,'success']);// show success page
+Route::get('/show/{id}', [documentController::class,'show']); // show document
+Route::delete('/delete/{id}', [documentController::class,'destroy']); // delete document
 
-// return the upload form
-Route::get('/upload', [documentController::class,'upload']);
+// Story routes
+Route::get('/successStory',[successStoryController::class,'index']); // show all stories
+Route::get('/story/{id}',[successStoryController::class,'show']); // show single
+Route::get('/makeStory',[successStoryController::class,'create']); // create story
+Route::post('/storeStory',[successStoryController::class,'store']); // store story
 
-// store the uploaded content
-Route::post('/store', [documentController::class,'store']);
+// charts routes
+Route::get('/all',function(){return view('components.charts.all');}); // charts view
+Route::get('/chart-editor',function(){return view('components.charts.chart-editor');}); // charts editor view
+// chart apis
+Route::get('/schemes/{id}', [ChartAPIController::class, 'getSchemes']); // get the schemes for the given department id
+Route::get('/chart-data', [ChartAPIController::class, 'getData']);  // get the chart data
 
-// show success page
-Route::get('/success', [documentController::class,'success']);
-
-// show document
-Route::get('/show/{id}', [documentController::class,'show']);
-
-// delete document
-Route::delete('/delete/{id}', [documentController::class,'destroy']);
-
-// show all stories
-Route::get('/successStory',[successStoryController::class,'index']);
-
-// show single
-Route::get('/story/{id}',[successStoryController::class,'show']);
-
-// create story
-Route::get('/makeStory',[successStoryController::class,'create']);
-
-// store story
-Route::post('/storeStory',[successStoryController::class,'store']);
-
-// charts view
-Route::get('/all',function(){return view('components.charts.all');});
-
-// charts editor view
-Route::get('/chart-editor',function(){return view('chart-editor');});
-
-Route::get('/schemes/{id}', [ChartAPIController::class, 'getSchemes']);
-
-Route::get('/chart-data', [ChartAPIController::class, 'getData']);
+// report routes
+Route::get('/generate-report', [ReportController::class,'reportEditor']);
+Route::get('/generate-report-request', [ReportController::class,'generateReport']);

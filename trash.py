@@ -1,3 +1,7 @@
+# TODO look into the files send by vincent
+# TODO see how reports can be generated 
+# TODO link the frontend and the backend via models to the database 
+
 """from bs4 import BeautifulSoup
 import json
 

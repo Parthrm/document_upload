@@ -3,6 +3,7 @@
 <head>
     <title>Report</title>
     <style>
+        /*  TODO Better CSS here */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -19,8 +20,12 @@
         table, th, td {
             border: 1px solid #ddd;
         }
-        th, td {
-            padding: 12px;
+        th{
+            padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+            text-align: left;
+        }
+        td{
+            padding: 0rem 0.25rem 0rem 0.25rem;
             text-align: left;
         }
         th {
@@ -38,31 +43,36 @@
     </style>
 </head>
 <body>
-    <h1>{{$departmentName}} Report</h1>
-    <p><strong>Department:</strong> {{ $department ?? 'N/A' }}</p>
-    <p><strong>Scheme:</strong> {{ $scheme ?? 'N/A' }}</p>
+    <h1 style="text-align: center; text-decoration: underline;" >Report Generation</h1>
+    <p><strong>Department:</strong> {{ $departmentName ?? 'N/A' }}</p>
+    <p><strong>Scheme:</strong> {{ $schemeName ?? 'N/A' }}</p>
     <p><strong>Distribution Type:</strong> {{ $distributionType ?? 'N/A' }}</p>
     <p><strong>Area Type:</strong> {{ $areaType ?? 'N/A' }}</p>
-
-    <h2>Data:</h2>
+    
+    <h2 style="page-break-after: always;" >Data:</h2>
     <table>
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Department ID</th>
+                <th>Sr No.</th>
+                <th>Name</th>
+                <th>District</th>
+                <th>Taluka</th>
                 <th>Scheme Name</th>
-                <th>Created At</th>
-                <th>Updated At</th>
+                <th>Department Name</th>
             </tr>
         </thead>
+        TODO make the right columns to appear  
         <tbody>
+            {{$i=1}}
             @forelse ($data as $beneficiary)
             <tr>
-                <td>{{ $beneficiary->id }}</td>
-                <td>{{ $beneficiary->department_id }}</td>
-                <td>{{ $beneficiary->scheme_name }}</td>
-                <td>{{ $beneficiary->created_at ? $beneficiary->created_at->format('Y-m-d H:i:s') : 'N/A' }}</td>
-                <td>{{ $beneficiary->updated_at ? $beneficiary->updated_at->format('Y-m-d H:i:s') : 'N/A' }}</td>
+                <td>{{ $i }}</td>
+                <td>{{ $beneficiary->name }}</td>
+                <td>{{ $beneficiary->district }}</td>
+                <td>{{ $beneficiary->taluka }}</td>
+                <td>{{ $schemeName }}</td>
+                <td>{{ $departmentName }}</td>
+                {{$i+=1}}
             </tr>
             @empty
             <tr>

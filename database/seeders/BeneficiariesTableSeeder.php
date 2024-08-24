@@ -14,42 +14,59 @@ class BeneficiariesTableSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create();
 
+        $faker = Faker::create();
+        $talukas = [
+            ["Bardez","Pernem","Bicholim","Tiswadi","Sattari","Ponda"],
+            ["Sanguem","Dharbandora","Salcete","Quepem","Canacona","Mormugao"]
+        ];
+        $district = ["North Goa","South Goa"];
         // Fetch existing department IDs
         $departments = DB::table('departments')->pluck('id')->toArray();
 
-        $numRecords = 50; // Number of records to seed, adjust as needed
+        if (empty($departments)) {
+            echo "No departments found.\n";
+            return;
+        }
+
+        $numRecords = 1500;
         $data = [];
-        
+
         for ($i = 0; $i < $numRecords; $i++) {
-            // Randomly select a department
             $departmentId = $faker->randomElement($departments);
             
-            // Fetch schemes associated with the selected department
             $schemes = DB::table('schemes')
                 ->where('department_id', $departmentId)
-                ->pluck('name')
+                ->pluck('id')
                 ->toArray();
             
-            // Ensure there are schemes available for the selected department
             if (empty($schemes)) {
+                echo "No schemes found for department ID: $departmentId\n";
                 continue;
             }
 
-            // Randomly select a scheme for the chosen department
-            $schemeName = $faker->randomElement($schemes);
-
-            // Create a record
+            $schemeId = $faker->randomElement($schemes);
+            $district_number = ($faker->randomNumber(1))%2;
+            
             $data[] = [
+                'name' => $faker->name(),
                 'department_id' => $departmentId,
-                'scheme_name' => $schemeName,
+                'district' => $district[$district_number],
+                'taluka' => $faker->randomElement($talukas[$district_number]),
+                'adhaar_seeded' => $faker->randomElement([1,0]),
+                'bank_seeded' => $faker->randomElement([1,0]),
+                'scheme_id' => $schemeId,
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
         }
 
-        DB::table('beneficiaries')->insert($data);
+        if (!empty($data)) {
+            DB::table('beneficiaries')->insert($data);
+            echo "Seeded $numRecords records.\n";
+        } else {
+            echo "No data to insert.\n";
+        }
     }
 }
 
