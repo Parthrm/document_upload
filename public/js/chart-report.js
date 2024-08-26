@@ -3,9 +3,14 @@ $(document).ready(function() {
     // function to handle change of type element
     $('#resource-type').on('change',function(){
         if($(this).val()=='chart')
+        {
             $('#gen_chart').text('Generate Chart');
+            $('#chart').show();
+        }
         else
-            $('#gen_chart').text('Generate Report');
+        {
+            $('#chart').hide();
+        }
     })
 
     // function to load the schemes 
@@ -106,27 +111,31 @@ $(document).ready(function() {
                 success: function(response) {
                     // Handle the response from the server, e.g., update the chart
                     console.log(response);
-                    switch (data.distributionType) {
-                        case 'areaWise':
-                            $('#title').text('Area Wise Distribution');
-                            break;
-                        case 'aadharSeead':
-                            $('#title').text('Aadhaar Seeded Distribution');
-                            break;
-                        case 'bankLinked':
-                            $('#title').text('Bank account linked Distribution');
-                            break;
-                        case 'maleFemale':
-                            $('#title').text('Male-Female Distribution');
-                            break;
-                        case 'beneficiaryCount':
-                            $('#title').text('Time Beneficiary Count');
-                            break;
-                        default:
-                            $('#title').text('Error occurred, please re-select values and generate');
-                    }
                     if(data.type === 'report'){
                         $('#output').html(response);
+                        $('#title').text('Report Generation');
+                    }
+                    else{
+                        switch (data.distributionType) {
+                            case 'areaWise':
+                                $('#title').text('Area Wise Distribution');
+                                break;
+                            case 'aadharSeead':
+                                $('#title').text('Aadhaar Seeded Distribution');
+                                break;
+                            case 'bankLinked':
+                                $('#title').text('Bank account linked Distribution');
+                                break;
+                            case 'maleFemale':
+                                $('#title').text('Male-Female Distribution');
+                                break;
+                            case 'beneficiaryCount':
+                                $('#title').text('Time Beneficiary Count');
+                                break;
+                            default:
+                                $('#title').text('Error occurred, please re-select values and generate');
+                        }
+
                     }
                     $('#chart-text').hide();
                     // load_chart(chartEle, $('#graph-type').val(), response);
@@ -177,7 +186,7 @@ $(document).ready(function() {
     // Trigger change event on page load to populate select2 initially
     $('#department').trigger('change');
     $('#distribution-type').trigger('change');
-    
+    $('#resource-type').trigger('change');
     $('#scheme').select2();
     $('#distribution-type').select2();
     $('#department').select2();

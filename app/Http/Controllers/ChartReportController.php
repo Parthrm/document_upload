@@ -54,6 +54,9 @@ class ChartReportController extends Controller
         $timeFrom = $request->input('timeFrom');
         $timeTo = $request->input('timeTo');
 
+        $departmentName = $this->getDepartmentName($department);
+        $schemeName = $this->getSchemeName($scheme);
+        $distributionName = $this->getDistributionName($distributionType);
         /*
         $distributionType
         */
@@ -72,17 +75,18 @@ class ChartReportController extends Controller
                         break;
                     case 'taluka':
                         $result = $this->filterTaluka($areaSelection, $result);
+                        // $result = $result->orderBy('taluka');
                         break;
-                    default:
-                        # code...
                 }
                 $result = $result->select('name', 'district', 'taluka','aadhaar_seeded','bank_seeded')->get();
+                $result = $this->substituteAadhaarBank($result);
                 break;
             default:
                 # code...
                 break;
         }
-        return view('ChartReport.chartReport-report-view',compact('result'));
+        return view('ChartReport.chartReport-report-view',
+        compact('result','departmentName','schemeName','area','areaSelection','aadhaar','bank','distributionType','timeFrom','timeTo','distributionName'));
     }
     private function filterAadhaar($aadhaar,$result) {
         switch($aadhaar){
@@ -125,8 +129,32 @@ class ChartReportController extends Controller
         return $result->whereBetween('created_at', [$startDate, $endDate]);
     }
     private function filterTaluka($talukaList,$result) {
-        
         return $result->whereIn('taluka', $talukaList);
     }
-    
+    private function getDepartmentName($id){
+        return DB::table('departments')->where('id',$id)->select('name')->get()[0]->name;
+    }
+    private function getSchemeName($id){
+        return DB::table('schemes')->where('id',$id)->select('name')->get()[0]->name;
+    }
+    private function getDistributionName($distributionType){
+        switch ($distributionType)
+        {
+            case 'areaWise':return "Area Wise Distribution";
+            case 'aadhaarSeed' : return "Aadhaar Seeded Distribution";
+            case 'bankLinked' : return "Bank account linked Distribution";
+            case 'maleFemale' : return "Male-Female Distribution";
+            case 'beneficiaryCount' : return "Beneficiary Count";
+            default:return "N/A";
+        }
+    }
+    private function substituteAadhaarBank($result){
+        foreach ($result as $row) {
+            // Perform some operations on each item
+            $row->aadhaar_seeded = $row->aadhaar_seeded == true ? 'Seeded' : ' Not Seeded';
+            $row->bank_seeded = $row->bank_seeded == true ? 'Linked' : ' Not Linked';
+        }
+        return $result;
+    }
 }
+
