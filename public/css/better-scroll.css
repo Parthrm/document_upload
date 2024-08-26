@@ -1,0 +1,25 @@
+.better-scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    --sb-track-color: #363636;
+    --sb-thumb-color: #808080;
+    --sb-size: 8px;
+}
+.better-scroll::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+.better-scroll::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+}
+
+.better-scroll::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    .better-scroll {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+        scrollbar-width: thin;
+    }
+}

@@ -443,22 +443,6 @@ class ChartAPIController extends Controller
     }
     
 
-    public function getSchemes($id)
-    {
-        
-        $idStr = (string) $id;
-        if (array_key_exists($idStr, $this->storageDictionary)) {
-            return response()->json([
-                'department_id' => $idStr,
-                'schemes' => DB::table('schemes')->where('department_id','1')->select('name','id')->get()
-            ]);
-        } else {
-            return response()->json([
-                'error' => 'Department ID not found'
-            ], 404);
-        }
-    }
-
     public function getData(Request $request){
         // dd($request);
         $dept = $request->header('Department');

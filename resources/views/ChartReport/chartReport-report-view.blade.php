@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Report</title>
+
     <style>
         /*  TODO Better CSS here */
-        body {
+        #wrapper {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 20px;
@@ -41,45 +38,41 @@
             margin: 10px 0;
         }
     </style>
-</head>
-<body>
+
+<div id="wrapper">
     <h1 style="text-align: center; text-decoration: underline;" >Report Generation</h1>
     <p><strong>Department:</strong> {{ $departmentName ?? 'N/A' }}</p>
     <p><strong>Scheme:</strong> {{ $schemeName ?? 'N/A' }}</p>
     <p><strong>Distribution Type:</strong> {{ $distributionType ?? 'N/A' }}</p>
     <p><strong>Area Type:</strong> {{ $areaType ?? 'N/A' }}</p>
-    
-    <h2 style="page-break-after: always;" >Data:</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Sr No.</th>
-                <th>Name</th>
-                <th>District</th>
-                <th>Taluka</th>
-                <th>Scheme Name</th>
-                <th>Department Name</th>
-            </tr>
-        </thead>
-        TODO make the right columns to appear  
-        <tbody>
-            {{$i=1}}
-            @forelse ($data as $beneficiary)
-            <tr>
-                <td>{{ $i }}</td>
-                <td>{{ $beneficiary->name }}</td>
-                <td>{{ $beneficiary->district }}</td>
-                <td>{{ $beneficiary->taluka }}</td>
-                <td>{{ $schemeName }}</td>
-                <td>{{ $departmentName }}</td>
-                {{$i+=1}}
-            </tr>
-            @empty
-            <tr>
-                <td colspan="5" style="text-align: center;">No data available</td>
-            </tr>
-            @endforelse
-        </tbody>
-    </table>
-</body>
-</html>
+    @if(!empty($result))
+        <h2 style="page-break-after: always;" >Data:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr No.</th>
+                    @foreach(array_keys((array) $result[0]) as $column)
+                        <th>{{ $column }}</th>
+                    @endforeach
+                
+                </tr>
+            </thead>
+            <tbody>
+            @php
+                $i=0;
+            @endphp
+                @foreach($result as $row)
+                <tr>
+                    <td>{{ $i+=1 }}</td>
+                    @foreach($row as $column => $value)
+                        <td>{{ $value }}</td>
+                    @endforeach
+                    
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    @else
+        <h1 style="text-align: center;">No data available</h1>
+    @endif
+</div>

@@ -18,7 +18,7 @@ return new class extends Migration
         $table->string('taluka');
         $table->integer('department_id');
         $table->string('scheme_id');
-        $table->boolean('adhaar_seeded');
+        $table->boolean('aadhaar_seeded');
         $table->boolean('bank_seeded');
         // Add other columns as needed
         $table->timestamps();

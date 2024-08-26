@@ -1,0 +1,1192 @@
+
+            [
+                'name' => 'Indira Gandhi National Disability Pension Scheme',
+                'description'=> 'In Process
+ 
+This scheme is not yet implemented by the Department',
+                'dept_id' => 'Department of Rural Development'
+            ],
+                
+
+            [
+                'name' => 'Indira Gandhi National Old Age Pension Scheme',
+                'description'=> 'In Process
+ 
+This scheme is not yet implemented by the Department',
+                'dept_id' => 'Department of Rural Development'
+            ],
+                
+
+            [
+                'name' => 'Indira Gandhi National Widow Pension Scheme',
+                'description'=> 'In Process
+This scheme is not yet implemented by the Department',
+                'dept_id' => 'Department of Rural Development'
+            ],
+                
+
+            [
+                'name' => 'Mahatma Gandhi NREGA',
+                'description'=> 'This scheme was made applicable to the State of Goa w.e.f. 1st April, 2008. The objective of the scheme is to provide wage for the enhancement of livelihood security of the households in rural areas of the country by providing at least one hundred days of guaranteed wage employment in a financial year to every household whose adult members volunteer to do unskilled manual work at the statutory minimum wage.  The wage is enhanced to Rs.254/- w.e.f. 1st April, 2018.
+             The expenditure over and above the approved pattern of Central assistance will be borne by the State.  Hence, though the scheme is in the ratio of 90:10, due to commitment of difference in the amount of wages and administrative expenses the allocation of the State Government is more than 10%.  Provision is to be made for unemployment allowance at the rate of 25% of the daily of Rs.240/- for the first 30 days and ½ (50%) of the wage rate (Rs.240/-) for remaining 70 days is to be borne by the State Government. Also any other administrative expenses of 6% are to be borne by the State Government.',
+                'dept_id' => 'Department of Rural Development'
+            ],
+                
+
+            [
+                'name' => 'National Family Benefit Scheme',
+                'description'=> 'Earlier under the scheme, a lump sum grant (assistance) of Rs.10,000/- was provided to the family on the death of its primary bread winner( age group 18 to 64 years). The assistance is enhanced from Rs.10,000/- to Rs. 20,000/- w.e.f 18.10.2012 to the death of primary breadwinner (male or female) should have occurred while he or she is in the age group of 18 to 59 years, i.e. more than 18 years of age and less than 60 years of age.  The earlier proposals in this respect were processed at Block Level and submitted to DRDA for sanction of assistance. However, in order to provide  instant relief, the funds are placed at the disposal of BDO and he has been authorized  to provide the assistance to the applicant. This scheme is 100% funded by the Central Government.',
+                'dept_id' => 'Department of Rural Development'
+            ],
+                
+
+            [
+                'name' => 'Pradhan Mantri Awas Yojana Grameen',
+                'description'=> 'The Indira Awaas Yojana (IAY) is now replaced as Pradhan Mantri Awas Yojana (PMAY) from the financial  year  2016-17  and  the  beneficiary  will   now  get  Rs. 1,20,000/-  instead of Rs. 95,000/-. Only  for those whose names appear in the Socio-Economic Caste Census 2011 housing beneficiaries list  i.e. 2619 persons all over Goa .
+These 2619  names were sent to the various Village Panchayats so that the names could be approved at their Gram Sabha Meetings. About approximately 1000 names were rejected at the various Gram Sabhas since some of the beneficiaries have constructed their houses on their own during the intermediate period from 2011 to 2015 and few beneficiaries were migrants and could not be traced comprising mostly of labour force. Of the other approximately 1554 beneficiaries, 65 beneficiaries have applied under PMAY.  This scheme is 60.40',
+                'dept_id' => 'Department of Rural Development'
+            ],
+                
+
+            [
+                'name' => 'Bhausaheb Bandodkar scheme for Higher Education for orphaned students',
+                'description'=> 'The basic  purpose  of  this Scheme is  to support  the educational  needs  of  the  children who are orphaned of both parents i.e. father and mother and are deprived of Higher Education for want of financial resources.The  amount of fee  waiver provided  to the eligible  students shall consists of Tuition fees, Library  fees, Laboratory  fees and  Development  fees, if any plus other charges payable to Institution like Lodging/ Boarding, Food (Hostel charges) or Transport, etc.',
+                'dept_id' => 'Directorate of Higher Education'
+            ],
+                
+
+            [
+                'name' => 'Fee Waiver scheme for SC/ST students pursuing Higher Education',
+                'description'=> 'This Scheme is framed in order to provide free access to every eligible SC/ST student, to the institutions of Higher learning.The amount of fee waiver provided to the eligible students shall consist of tuition fees, Library fees, Laboratory fees and development fees, if any. All other charges and fees would be borne by the concerned student.',
+                'dept_id' => 'Directorate of Higher Education'
+            ],
+                
+
+            [
+                'name' => 'Goa Scholar Scheme',
+                'description'=> 'The Government has introduced a Novel Scheme called the "Goa Scholars Scheme" to promote the pursuit of postgraduate studies by younger population of Goa who have obtained admissions in institutions of proven excellence and in top 500 institutions of the world. The Goa Scholarship is an investment in human capital buidling to nurture researchers and Scientists in India or abroad. Selected scholars are paid Scholarship worth US Dollars 20,000 for studies outside the country. For studies in India payment is Rs.3,00,000/- per annum (for maximum of 2 years).',
+                'dept_id' => 'Directorate of Higher Education'
+            ],
+                
+
+            [
+                'name' => 'Scheme for Promotion of Science Education',
+                'description'=> 'The scheme has been basically formulated to promote General Education in pure Sciences. The Scheme has following components: A - Catch them Young under which - A - Student scoring 75% and above marks at XIIth exam and gets admitted for B.Sc. Course shall receive Rs. 2000/- p.m. till he completes his course and Rs.5000/- as grant of purchase of book/equipment.B - Support for Patents - Any student or teacher who files a patent shall be entitled to receive a grant of Rs.10,000/-. If patent is achieved/granted, he/she shall be entitled to receive Rs.40,000/-.C - Support for Exhibition of Research Based Projects - Any recognized institution which plans an all Goa Exhibition of research based projects shall be entitled to receive grant of Rs.1.00 lakh towards prizes and organization of exhibition.D - Support for Project Proposals - Any College Teacher submits a Research Project related to Science and Technology as applicable to Goa. Maximum grant available is Rs.5.00 lakh',
+                'dept_id' => 'Directorate of Higher Education'
+            ],
+                
+
+            [
+                'name' => 'Award for inter Caste Marriages',
+                'description'=> 'Per couple Rs. 1.00 lakh',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Bachapan Social Security cover to Orphan Children',
+                'description'=> 'The objective of the scheme is to provide assistance to the children who do not have both parents and guardians  and do not have any financial support for their livelihood/education. An amount of Rs. 2000/ per month, per beneficiaries is given to purchase of books/note books for school going children.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Claim of 50 percent subsidy for motorized vehicle on petrol diesel to disabled',
+                'description'=> '50% subsidy  on its Petrol / Diesel  per month for vehicle upto 2 H.P and 25 hs  Petrol/ Diesel per month for vehicle above 2 hp',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Dayanand Social Security Scheme Freedom from Hunger DSSS',
+                'description'=> 'To provide Financial Assistance to the needy Senior Citizen, Single Women and Disabled Persons. Mental illness Immune Deficiency Persons.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Dr. Ambedkar Centrally Sponsored Scheme of Post Matric Scholarship for Economically Backward Class EBC students',
+                'description'=> 'The Scheme is not yet implemented by the concerned department.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to persons with severe Disabilities',
+                'description'=> 'Financial Assistance to persons with severe Disabilities is provided   : Quarterly interest on the fixed deposit of Rs. 20000  is  paid  to tha person with disability for a term of 10 years and there after a amount of Rs. 20000 is transferred to the beneficiary  Account',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to SC/OBC/Disabled Minority community in nursing courses',
+                'description'=> 'The objective of the scheme is to provide financial assistance to SC/OBC/Disabled /Minority Community students undergoing Courses in Nursing i) Home Nursing Course (6 months Courses) Rs. 5000/- per month is provided  as fees and for transportation charges, i.e Rs. 30,000/- per annum. ii) Diploma in nursing (1 year Course) Rs. 10,000/- per annum is paid as fees per student. iii)Degree in Nursing (3 years) Rs. 15,000/-per annum is provided as assistance to the students undergoing the course iv) health Worker (1 year course)Rs. 5000/- per annum is provided as assistance to the students undergoing the course.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to Up gradation of Existing Kiosk Gada',
+                'description'=> 'To provide financial assistance to the owner of the existing Kiosk(Gada) for the purpose of Up-gradation of the existing business activities,(Rs.20000)',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'GA-Protection of Civil Rights',
+                'description'=> 'All the victims under SC/ST, POA Act, 1989are entitled for the compesation in accordance with the provisions of the Act. Hence, it is binding on the State Government to make appropriate provisions in the said scheme.
+Protection of Civil Rights is one of the component under umbrella scheme wherein Rs.2.50 lakhs is provided as incentive to the couple for inter caste marriage.
+The objective of the scheme is to curtail the evils of untouchability in the society and to bring the SC Community in the main stream of the Society.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Gagan Bharari Shiksha Yojana for Dhangar Community',
+                'description'=> 'To provide additional financial assistance to the Dhangar students as the maintenance allowance given under the Post Matric Scholarship is inadequate to meet the expenses on food and travel. It also aims to provide additional allowance to cover the expenses of Dhangar Students with disability as the disability allowances given under the Post Matric Scholarship is not sufficient to meet the expenses of disabled students',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Kanya Dhan for SC Students',
+                'description'=> 'With a view to avoid discontinuation of education among girl students of SC families and to motivate them, the scheme “ Kanya Dhan for SC Girl Students”  is introduced. Rs. 25000/- is placed is fixed deposit in the name of the girl student, which can be withdrawn by her after passing Std XII th',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Post Matric Scholarship for OBC',
+                'description'=> 'As per the Students fees paid to the institution',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Post Matric Scholarship for SC Students',
+                'description'=> 'As per students fees paid to institutions.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Prashikshan Yatra for Dhangar Community',
+                'description'=> 'To provide Financial Assistance to the educational institutes in the Dhangar Community dominated areas to conduct study tours/Excursions across the country to cover places of historic, cultural and educational importance during school vacations.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Prashikshan Yatra for SC Community',
+                'description'=> 'To provide Financial Assistance to the educational institutes in the SC dominated areas to conduct study tours/Excursions across the country to cover places of historic, cultural and educational importance during school vacations.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Pre Matric Scholarship for OBC Students',
+                'description'=> 'Std (XI to X)=375X11= Rs. 4125/-',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Pre Matric Scholarship for SC IX TO X',
+                'description'=> 'V to VIII = 225X11= Rs. 2475/-',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Pre-Matric Scholarship to the Children of those engaged in occupation involving cleaning and prone to health hazards',
+                'description'=> 'Rs. 2.92 lakhs  over and above commuted liability.
+In this Scheme the State spends Rs. 2.92 lakh and the over and above expenditure is incurred by the Central Ministry. An amount of Rs. 1850/- is paid as scholarship to the children of those  engaged in occupation involving  cleaning and prone to health hazards.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'RAJIV AWAAS YOJANA',
+                'description'=> 'To provide financial assistance for Construction and repairs of house to Economically weaker section of society and who are just above poverty line under Municipality Area. New Construction Rs. 25,000/-, Repairs  of existing house Rs. 12500/-',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Scheme for felicitating the Best Social Worker.',
+                'description'=> 'To create social awareness  and to encourage the individuals to help the poor, needy and common man to improve their socio -economic , Education, standard of living, etc Rs.25,000 per person',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Support to Orphan Child/Children of a Widow for Dhangar Community',
+                'description'=> 'To give financial support to the orphan children of widows for meeting the expenditure on food, clothing and shelter till the children attains the age of 18 years.',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Welfare of Handicapped Scholarships, Stipend to the Disabled Students',
+                'description'=> 'Std Ist to IV th - Rs. 200/-  Per Month
+and Std. Vth to VIIIth Rs. 200/- Per Month 
+Std IX to XIIth - Rs. 300/- Per Month',
+                'dept_id' => 'Directorate of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Asha Incentives',
+                'description'=> 'Not yet implemented by the concerned department',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana AB-PMJAY',
+                'description'=> 'Ayushman Bharat, a flagship scheme of Government of India, was launched as recommended by the National Health Policy 2017, to achieve the vision of Universal Health Coverage (UHC). This initiative has been designed to meet Sustainable Development Goals (SDGs) and its underlining commitment, which is to "leave no one behind."',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'Family Planning Compensation Scheme',
+                'description'=> 'Rs. 700/-  and Rs. 1500/- for female sterilisation',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'Honorarium to DOT Providers',
+                'description'=> 'Scheme is not implemented by the concerned department.',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'Incentive to Private Providers',
+                'description'=> 'Scheme is not implemented by the concerned department.',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'Janani Shishu Swasthya Karyakram',
+                'description'=> 'Drop back facility, Diet and medication for delivered mother and medication for new born babies.',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'Janani surakasha yojana',
+                'description'=> 'All women ( BPL, ST, SC) Who deliver in Government Institution are paid an amount of Rs. 600/- in Urban Area and Rs. 700/- in Rural Area.',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'National Ayush Mission',
+                'description'=> 'The Scheme is  implemented by the concerned department',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'NIKSHAY - TB patient incentive for nutritional support',
+                'description'=> 'Ministry of Health and Family Welfare, Government of India has announced the scheme for incentives for nutritional support to TB patients. This scheme will be called “Nikshay Poshan Yojana”.',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'Payment to contractual Staff',
+                'description'=> 'Lumpsum amount is sanctioned to pay the contractual staff.',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'Support for TB Patients in Tribal Areas',
+                'description'=> 'The Scheme is not implemented by the concerned department',
+                'dept_id' => 'Department of Health and Family Welfare'
+            ],
+                
+
+            [
+                'name' => 'Agriculture Technology Management Agency ATMA extention',
+                'description'=> 'This Scheme is merged with the Agriculture Technology Management Agency Farmers',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Agriculture Technology Management Agency ATMA Farmers',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Assured price for Agriculture produce',
+                'description'=> 'Support for farmers to get an assured price for Agro product sold to registered traders.',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Interest Subsidies on loan for Agriculture and Allied Activities',
+                'description'=> 'Loans for Agriculture And Allied Activities upto Rs. 5.00 lacs given by Financial institutions are provided at 4% interest rates for maximum repayment period of 5 years.',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Mission for Integrated Development of Horticulture',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'National Food Security Mission',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'National Mission on Edible Oils- Oil Palm NMEO-OP',
+                'description'=> 'To provide assistance for the Oil Palm cultivators in the State of Goa under various components of National Mission on Edible Oils- Oil Palm (NMEO-OP)',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Paramparagat Krishi Vikas Yojana',
+                'description'=> 'To promote natural resource based integrated and climate resilient sustainable farming systems that ensure maintenance and increase of soil fertility, natural resource conservation, on-farm nutrient recycling and minimize dependence of farmers on external inputs. 
+To reduce cost of agriculture to farmers through sustainable integrated organic farming systems thereby enhancing farmers net income per unit of land.',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Pradhan Mantri Krishi Sinchai Yojana',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Rastriya Krishi Vikas Yojana - Remunerative Approaches for Agriculture and Allied Sector Rejuvenative RKVY - RAFTAAR',
+                'description'=> 'RKVY - RAFTAAR is anumberalla scheme of Government of India for ensuring holistic development of Agriculture & Allied sectors by allowing states to choose their own Agriculture & Allied sector development activities as per the local/farmers need. The scheme is continued for the period from 2021-22 to 2025-26 i.e. 15th Finance Commission.',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Shetkari Adhar Nidhi',
+                'description'=> 'Compensation to farmers whose crops are affected due to natural calamities, wild animals and other damages as notified',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Sub Mission on Agriculture Mechanization Centrally Sponsored',
+                'description'=> 'In Process
+ 
+This Scheme is not yet implemented by the Department',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Sub Mission on Seeds and Planting Materials',
+                'description'=> 'In Process
+The Scheme is not yet implemented by the Department',
+                'dept_id' => 'Directorate of Agriculture'
+            ],
+                
+
+            [
+                'name' => 'Clay Idol Makers Subsidy Scheme',
+                'description'=> 'In the Scheme the idols made out of Clay by those artisans registered with GHRSSIDC will be subsidized to the extent of Rs. 100/- per idol provided the size of idol is minimum 1 ft. height. The subsidy will be given to the registered artisans after they submit their applications in the prescribed proforma to the GHRSSIDC. The GHRSSIDC wil scrutinize each application received from the the registered artisans and verify the production capacity of the respective artisan. The artisan shall have to submit an undertaking that these idols have been actually produced by him and not imported from outside the State.
+This Scheme will be open for all traditional clay idol makers/artisans who are registered with the GHRSSIDC. The maximum number of idols eligible for subsidy will be restricted to 250 per artisan per year.',
+                'dept_id' => 'Department of Handicrafts Textiles and Coir'
+            ],
+                
+
+            [
+                'name' => 'Antya Sanskar Sahay Yojana for Dhangar Community',
+                'description'=> 'To grant Financial Assistance for conducting funerals and religious ceremonies related to last rites of the deceased Dhangar families to have funeral in decent manner.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Antya Sanskar Sahay Yojana for SC Community',
+                'description'=> 'To Grant Financial Assistance for conducting funerals and religious ceremonies related to last rites of the deceased SC families to have funeral decent manner.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Atal Asra Yojana for Dhangar Community',
+                'description'=> 'To provide financial assistance for construction, reconstruction and repairs of houses to economically weaker OBC population which is in addition and/or irrespective of amount already sanctioned under Rajiv Awas Yojana or Indira Awas Yojana or any other similar scheme.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Atal Asra Yojana for SC Community',
+                'description'=> 'To provide Financial Assistance for construction, reconstruction and repairs of houses to economically weaker SC Population which is in addition and/or irrespective of the amount already Sanctioned under Rajiv Awas Yojana or Indira Awas Yojana or any others similar scheme.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Gagan Bharari Shiksha Yojana for SC Community',
+                'description'=> 'To provide additional financial assistance to the SC students as the maintenance allowance given under the Post Matric Scholarship is inadequate to meet the expenses on food and travel. It also aims to provide additional allowance to cover the expenses of SC Students with disability as the disability allowances given under the Post Matric Scholarship is not sufficient to meet the expenses of disabled students.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Merit Based Award to Dhangar Community',
+                'description'=> 'To motivate students by giving merit based Award based on the benchmark of the performance and to provide financial incentives to high performing students who are economically weak.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Merit Based Award to SC Community',
+                'description'=> 'To motivate students by giving merit based Award based on the benchmark of the performance and to provide financial incentives to high performing students who are economically weak.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Mundkarache Ghar for Dhangar Community',
+                'description'=> 'To provide financial assistance to the needy Mundkars of Dhangar community to enable them to exercise their right to purchase dwelling house at the price determined by the Mamlatdar under the provisions of the Goa Daman and Diu Mundkar Act.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Mundkarache Ghar for SC Community',
+                'description'=> 'To provide Financial Assistance to the needy Mundkars of Scheduled Caste community to enable them to exercise their right to purchase dwelling house at the price determined by the Mamlatdar under the provisions of the GDD Mundkar Act',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Sanskriti Bhavan for Dhangar Community',
+                'description'=> 'The scheme aims to help the Dhangar community by providing the most needed infrastructure of multipurpose community halls in villages dominated/inhabited by Dhangar communities. These Multipurpose Community Halls will serve as marriage hall facilitation point for organizing awareness programmers conducting trainings seminars holdings meeting of forest right committees and other social cultural events.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Sanskriti Bhavan for SC Community',
+                'description'=> 'To help the Scheduled Caste community by providing the most needed infrastructure of multipurpose community halls in villages dominated/inhabited by scheduled caste community. These Multipurpose Community halls will serve as marriage hall facilitation point for organizing awareness programmers conducting trainings seminars holdings meeting of forest right committees and other social cultural events.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Support to Orphan Child/Children of a Widow for SC Community',
+                'description'=> 'To give financial support to the orphan children and the children of widows for meeting the expenditure on food, clothing and shelter till the children attains the age of 18 years.',
+                'dept_id' => 'Department of Social Welfare'
+            ],
+                
+
+            [
+                'name' => 'Education Concession to the children of Service Personnel',
+                'description'=> 'This Scheme is only for the students whose parents are working  in Defence Personnel i.e Army, Navy, Airforce for professional Courses. On the basis of their  original Receipt. from fees Receipt only Tuition Fees amount  is entitled for the scheme and not Development Fees, Library Fees, Etc.',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Incentive scholarship to meritorious students at all Govt. and aided from V-X',
+                'description'=> 'An exam is conducted by SCERT office of primary level of STD IV students. Those students who passes the exam are eligible for the scholarship from std V-X. if any one student who detained in class from std V-IX will not be entitled for the Scholarship. Rs. 2000/- per Student per annum.',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Inclusive Education for disabled at secondary stage',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Kind benefit under IEDSS of RMSA',
+                'description'=> 'In Process
+This scheme is not yet implemented by the Department',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Mid Day Meal Scheme',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Opportunity Cost for children belonging to SC and ST Students',
+                'description'=> 'The Scheme is only for the Schedule Caste and Schedule Tribes students from Std I - XII. The Students have to produce their Caste Certificate. This Scheme is to enhance the backward Community. Std I-IV-Rs. 750/-, V-VII Rs. 1000/-, VIII-X Rs.1200/- XI-XII- Rs. 1500/- per student per annum',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Rajiv Gandhi Shikshan Sahaya Yojana Scholarship for ecomical backward class students',
+                'description'=> 'Students studying from vth to Xth : Income limit of thje parents is Rs. 1,50,000 per year. Maximum 20 awards to each  Institution every year. Renewal of Scholarship is available upto  the stage of Education. Rate of Scholarship is Rs. 250/-  per year to Vth to VII th Std students and Rs. 400/- per year to VIIIth to Xth std. students.
+ 
+Students studying from XIth to graduation level:- Income of parents is Rs. 1,50,000 per year. Maximum 20 awards to each Institution every year. Rate of scholarship is Rs. 750/- per year.',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Sarva Shiksha Abhiyan',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Scheme for Education of children with special needs',
+                'description'=> 'The main objective of the scheme is to improve the education opportunities for the children with special needs by way of financial assistance to the children and institution the scheme has been designed to make children with disabilities independent and earning members of their family so that they need not be a liability of the family. It is a sponsored scheme which the following components. The financial assistance under the scheme is applicable to special children studying in recognized schools from Std. I to XII.',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Scheme Goa State Scholarship to the cadets studying  in RIMC Deharadun, Uttarrakhand',
+                'description'=> 'The Main objective of this Scheme is to encourage more Goan students to join defence services in RIMC, Dehradun, Sainik School or any other Military college or School of India shall emphasize on promotion of defence training to the Students in the course of their studies and State Government will partly award them the schlarship for which the quantum of school shall be Rs. 50,000/- per annum per cadet for 10 cadets in a year.',
+                'dept_id' => 'Directorate of Education'
+            ],
+                
+
+            [
+                'name' => 'Anganwadi Services Supplementary Nutrition SNP',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Child Protection Services CPS - Facilities to Beneficiaries',
+                'description'=> 'Child Protection Services is a Centrally Sponsored Scheme aimed at building protective environment for Children in difficulties Circumstances i.e. Children in need of Care and Protection and ChildrenConflict with Low.',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Financial Incentives to Mothers who deliver a Girl Child - MAMTA',
+                'description'=> 'Under this scheme a financial incentive of Rs. 25000/- is given to but with disbursal linked to 5 stages of Rs. 5000/- each at birth, completion of Immunization (after 3 years), completion of Secondary education, completion of higher Secondary education, finally completion of Degree education',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Foster Care Scheme - Vatsalya',
+                'description'=> 'Foster Care is a family based non-institution child care programme that provides temporary/substitute care for children in difficult circumstances.',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Goa Technical/ Vocational training to sex workers and sexually abused women Scheme, 2013 PRABHAT',
+                'description'=> 'This scheme provide Technical/ Vocational training to sex workers and sexually abused women to enable them to earn for their livelihood by such technical/ vocational training and skill.',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Griha Aadhar Scheme',
+                'description'=> 'Under the Griha Aadhaar Scheme a financial assistance of Rs. 1500/- is disbursed to the housevives on fulfilment of eligibility criteria',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Integrated Child Protection Scheme - Salary of Staff',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Laadli Laxmi Scheme',
+                'description'=> 'Laadli Laxmi is the scheme is initiated by the Government of Goa in a view to reduce the financial burden through Government assistance of Rs. 1.00 Lakh to the girl child upon attaining 18 years or on marriage as per the scheme.',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'National Creche Scheme Honorarium to workers',
+                'description'=> 'Grants will be utilised towards honorarium to creche workers and helpers',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'National Creche Scheme Nutrition',
+                'description'=> 'Grants will be utilised towards nutrition to beneficiaries',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'One Stop Centre - Payment of Salary of Staff',
+                'description'=> 'It aims to provide integrated support and assistance to women affected by violence, facilitate immediate emergency and non emergency access to a range of services including medical, legal, psychological and counselling support under one roof to fight against any form of violence against women.',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Pradhan Mantri Matru Vandana Yojana',
+                'description'=> 'Rs. 1000/- First installment, Rs. 2000/- second instalment  Total of Rs.5000/-',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Scheme for Adolescent Girls',
+                'description'=> 'Following integrated package of services are provided to adolescent Girls, viz. 1) Nutrition, 2) IFA supplementation, 3) health check-up and Referral services 4) Nutrition and Health Education (NHE) 5) Counseling/Guidance on family welfare, ARSH, child care practices and home management, 6) life skill Education and accessing public services, 7) Vocational trainning for girls aged 16 and above under National Skill',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'State Resource Center for Women',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'State Training Action  Plan',
+                'description'=> 'In Process',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Swadhar Greh -Salary to Staff',
+                'description'=> 'Grants will be utilised towards payment to salary to staff.',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Swadhar Greh-facilities to Beneficiaries',
+                'description'=> 'Grants will be utilised towards providing facilities to beneficiaries',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'The Internship Scheme for Students of Counseling/Psychology/Social Work/Home Science etc.',
+                'description'=> 'Every year this Directorate invites applications from aspiring post graduate students of Counseling/Psychology/Social Work/Home Science etc. to offer an opportunity of internship facility to be trained as qualified interns in the State run and private children's and shelter homes who can be offered hands on job training experience.',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Ujjawal facilities to beneficiaries',
+                'description'=> 'In Process.
+This Scheme is not yet implemented by the State',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Ujjawala-Salary for the Staff',
+                'description'=> 'In process
+This scheme is not yet implemented by the Department',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Umbrella ICDS - Honorarium to AWW and AWH',
+                'description'=> 'Anganwadi Workers and Anganwadi Helpers are entitled for an honorarium of Rs.3000/- and Rs.1500/- per Month',
+                'dept_id' => 'Directorate of Women and Child Development'
+            ],
+                
+
+            [
+                'name' => 'Centrally Sponsored Scheme of Pre- Matric Scholarship for students belonging to Scheduled Tribes studying in Class IXth  and Xth.',
+                'description'=> 'The benefits  of Rs. 2250/- is given to students studying in class IX and X class.',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance for Construction/Re-Consturction and repair of houses under Atal Asra Yojana',
+                'description'=> 'The Benefit is given for re-construction &; new construction is Rs. 2,00,000 lakhs and for repair is Rs. 75000/-',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to Participate and organize exhibition cum sale, fairs and workshop camp as "Udyog Adhar Yojana".',
+                'description'=> 'Objective of the scheme is to Provide financial Assistance to individual ST person or a group of ST Persons either to participate in the exhibition / Fairs etc. organized in the state of Goa or outside Goa.',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to ST students under Gagan Bharari Shiksha Yojana',
+                'description'=> 'The Benefits given under this scheme is Rs. 7500/- for day scholar and Rs. 15000/- for Hosteller.',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Grant of Financial Assistance for performance of Funeral and Religious Ceremonies related to last rites of a person of ST community under  Antya Sanskar Shay Yojana',
+                'description'=> 'The re-imbursement of the cost incurred for the funeral & up to Rs. 20,000/-',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Merit Base Award and recognition of High performance in the Board Exams of SSC and HSSC in the State of Goa.',
+                'description'=> 'Felicitation of Rank holders and Merit base award for high performers in Board exams. Rs. 20,000 for the first five ranks holders of board exams. Merit base award for high performers in board exams., Rs. 15,000/- for scoring 75% and above, Rs. 10,000/- for &scoring 70% and above, Rs. 8,000/- for scoring 60% and above; ST certificate; issued by competent authority. Income certificate, Passing certificate along with mark sheet',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Post Matric Scholarship to the students belonging to Scheduled Tribes for studies in India',
+                'description'=> 'The Benefit is given under this scheme to the students of Scheduled Tribes studying in Post matriculation.',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Pre-matric Scholarship Vth to Xth',
+                'description'=> 'Benefit is given to Std Vth to VIII Rs. 3575/- & std Ixth & Xth Rs. 4125 & Meritorious scholarship for students securing 50% marks & above Rs. 900/- for class Vth & Vith, Rs. 1000/- for class VIIth & VIIIth, Rs. 1100 for class Ixth & Rs. 1600/- for Xth',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Scheme   to   Provide financial   assistance   for   Scheduled   Tribe   people   for   the   purpose   of Short   Term   Professional   Training   Courses   in   the   state   of   Goa',
+                'description'=> 'Objectives of the scheme  is   to   provide   to   train   the   youth   of   Scheduled   Tribe community    in   order to   start   their   own  business and the short term professional training courses scheme is designed to provide   financial assistance to the beneficiaries of Scheduled Tribe community to acquire skill by joining the various training courses for the purpose of self employment or for their livelihood.',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Scheme of scholarship to ST students pursuing Home Nursing Courses',
+                'description'=> 'The Benefit is given for Rs. 3500/- for six months, Rs. 5000/- for one year, Rs.10,000/- for three years & Rs. 3500/- for Health worker.',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Scheme to support Orphan Child/Children of widow belonging to ST Community',
+                'description'=> 'The Benefit is given as Fixed maintenance allowance of Rs. 1500/- per month per child of widow,Fixed maintenance allowance of Rs.2000/- per month per child who is an Orphan (Benefit limited to two children)',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Vidya Laxmi',
+                'description'=> 'The Benefit is given as Rs. 25,000/- as fixed deposite for two years after passing SSC at one attempt for Girl Child',
+                'dept_id' => 'Directorate of Tribal Welfare'
+            ],
+                
+
+            [
+                'name' => 'Assistance to students seeking education outside Goa in any filed of Art and Culture',
+                'description'=> 'This scheme has designed in order to provide assistance to Goan students seeking education in any field of Art and Culture outside Goa',
+                'dept_id' => 'Directorate of Art and Culture'
+            ],
+                
+
+            [
+                'name' => 'D.D. Kosambi Research Fellowship Scheme',
+                'description'=> '"D.D. Kosambi Research Fellowship" to encourage the Goan scholars to undertake research in the areas of society, economy, polity, history, art and culture of Goa and to promote interdisciplinary research programmes in colleges and university by way of assistance. Eligible scholars for junior category shall be awarded a fellowship up to Rs.15000/- per month for a period of 2 years and eligible scholars for seniors & post doctoral category shall be awarded a fellowship of Rs.20000/- for maximum 2 years.',
+                'dept_id' => 'Directorate of Art and Culture'
+            ],
+                
+
+            [
+                'name' => 'Kala Samman',
+                'description'=> 'Under this scheme monthly financial assistance is given  to the Artist who are in indigent circumstances above the age of 60 years. whose annual income is below 48000/- . In this Scheme the artist are paid Rs. 2500/-  to the general Artist and Rs. 3200/- to the Goa State Cultural Awardees.',
+                'dept_id' => 'Directorate of Art and Culture'
+            ],
+                
+
+            [
+                'name' => 'Kalakar Kritadnyata Nidhi',
+                'description'=> 'This scheme is designed in order to provide assistance to aged needy Goan Artist not less than 50 years and their dependent family in indigent circumstances towards medical treatment, marriage, Natural calamities, funeral of artist, Scholarship, self employment and lumsum grant.',
+                'dept_id' => 'Directorate of Art and Culture'
+            ],
+                
+
+            [
+                'name' => 'Scheme to provide financial assistance to the publishers for publishing books of Goan authors',
+                'description'=> 'To support Goan Publisher by providing them opportunity and encourage them in publishing books and to give financial support to Goa publishers for publishing the books. Under this scheme up to 300 books will be purchased, subject to the condition of total amount should not exceed Rs.50,000/-. Publisher shall give minimum 15% discount on the piece of the book.',
+                'dept_id' => 'Directorate of Art and Culture'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance Scheme',
+                'description'=> 'Financial Assistance is awarded at the rate of Rs. 600/- per month to the trainees of Government ITI belonging to Physical Handicapped, BPL, SC/ST categories and to the trainees whose family's annual income is up to Rs. 3,00,000/-.',
+                'dept_id' => 'Directorate of Skill Development and Entrepreneurship'
+            ],
+                
+
+            [
+                'name' => 'Pradhaan Mantri Kaushal Vikas Yojana',
+                'description'=> 'This is the flagship scheme of Ministry of Skill Development & Entrepreneurship for Skill Certification of large number of Indian youth to take  up industry relevant skill training for better livelihood.
+Rs. 500/- to be paid to each candidates certified under PMKVY Scheme.
+Stipend @ Rs. 125/- per day to Covid Warriors for 90  days of OJT in Hospitals.',
+                'dept_id' => 'Directorate of Skill Development and Entrepreneurship'
+            ],
+                
+
+            [
+                'name' => 'Trainee Tool Kit',
+                'description'=> 'Trainee Tool Kit worth maximum Rs. 2500/- is provided to the trainees of Government ITI belonging to Scheduled Caste and Scheduled Tribes Community.',
+                'dept_id' => 'Directorate of Skill Development and Entrepreneurship'
+            ],
+                
+
+            [
+                'name' => 'Community Dairy Farming Scheme',
+                'description'=> 'Subsidy at the rate of 50% maximum to the tune Of Rs. 1 Crore of the permissible unit cost limited to 2 Crore is given to larger dairy units by community/groups.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Dairy Equipment Scheme',
+                'description'=> 'Subsidy @ 75% of the permissible cost of the equipment covered under the Scheme shall be limited to Rs. 1.5 lakhs only on the total equipments purchased will be released to the farmer.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Establishment of Backyard Poultry Unit For SC and ST only',
+                'description'=> 'Under this scheme Scheduled Caste and Scheduled Tribe beneficiary is supplied Backyard Poultry Unit worth Rs 2000/- free of cost.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance for Infrastructure of Poultry Farm 2018',
+                'description'=> 'To encourage and enable farmers to venture in for poultry production and also to encourage existing poultry farmers to take up rearing of birds in order to increase poultry meat and egg production in the state, Assistance is provided for: a) Construction of shed, Godown b)Purchase of Poultry equipments.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance for Rearing Broilers, Layers and Low Input Technology Poultry Birds 2018',
+                'description'=> 'To encourage and enable farmers to venture in for poultry production and also to encourage existing poultry farmers to take up rearing of birds in order to increase poultry meat and egg production in the state, Assistance is provided for: a) Purchase of day old chicks. b) Purchase of feed.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to Dairy Farmers belonging to Scheduled Tribes and Scheduled Caste for purchases of basic dairy equipments SC/ST',
+                'description'=> 'A set of items of general use of a Dairy farmer will be given to the farmers as assistance. The total value of items given shall not exceed Rs. 5000/-.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Goatery Scheme Assistance for Goat Rearing',
+                'description'=> 'To motivate farmers to undertake scientific, intensive and semi intensive Goat farming, To provide financial assistance for purchase and rearing of indigenous breeds of Goats and to upgrade local stock to make Goat farming profitable. Subsidy is provided for a)purchase of unit of Goats (10F + 1M), b)Transporting unit, c)shed construction, and d) for Feed.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Gramashakti - Supply of Low Input Technology Poultry Birds to Rural Farmers 2018',
+                'description'=> 'To encourage and enable rural farmers to venture in for poultry production, To increase poultry meat and egg production and consumption in the State and to increase the per capita availability and consumption of Poultry eggs and meat at rural level. Poltry unit consisting of 10 birds (9 F + 1 M) of 7 weeks and above along with 10Kg of Poultry Feed is given to free of cost to the elegible rural farmers',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Incentive to Green Fodder Cultivation for Perennial and Seasonal Fodder Development in the State',
+                'description'=> 'Incase of Seasoal fodder @ Rs 15,000/- per hect. and for Caltivation of Percenial fodder Rs. 65,000 per hect. plus incentives for irrigation Rs. 60,000/- per hect. depending upon the area of the cultivation, is given as subsidy under the Scheme.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Interest Subsidy on loans for Agriculture and Allied activities',
+                'description'=> 'Rate of interest applicable to the farmers will be 4% and the interest over and above this ceiling charged by the institutions shall be borne by the Government as interest subsidy to the farmer.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Kamdhenu Scheme Sudharit',
+                'description'=> 'The farmers get subsidy on the cost of cross breed cows /improved she buffaloes/indengenious breed cows namely sahiwal, gir and red sindhi in one & ;to three phases - subsidy varies from 40 to 90 %',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Pashupalan scheme',
+                'description'=> 'To encourage rearing of cross-bred calves/improved buffalo calves/Indigenous breed calves namely Sahiwal, Gir &; Red Sindhi, from birth to 27 months. Subsidy @ 75% to 100% of estimated expenditure of Rs. 52,800/- is provided to the General Category and SC, ST and Dhangar Category beneficiaries.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Purchase of Milch Animals under Western Ghats Development Programme WGDP',
+                'description'=> 'Subsidy is provided @ 50% of the cost per animal, subject to a maximum of Rs. 10,000/- per animal and for SC &amp; ST beneficiaries an extra subsidy will be paid of @ Rs. 2000/- per animal on the fixed unit cost.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Renovation of Cattle Shed under Western Ghats Development Programme WGDP',
+                'description'=> 'To assist farmers to construct/repair existing cattle shed and thereby adopt modern animal husbandry practices and rear healthy animals. The subsidy of Rs. 15,000/- shall be released to the farmers on completion and verification of work.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Scheme for incentives to Milk Producers',
+                'description'=> 'Composite subsidy @ 40% (incentive on milk @ 32.28% &; cattle feed @ 7.72%) on the proceeds of milk supplied to Dairy Cooperative Societies in the State of Goa, is paid on monthly basis.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Subsidy for Transport of Poultry Feed',
+                'description'=> 'The subsidy will be released @ Rs. 200/- per metric ton of feed purchased.
+ Feed in its ready to use form should be purchased from state other than Goa State and brought to Goa to meet his requirements
+ The farmers who need feed in lesser quantity less than 3.0 tons at a time shouldbuy the feed through Goa Bagayatdar only who sell the Poultry feed Goa Bagayatdar is approved Marketing Co-operative which sells agriculture inputs and feed in different parts of Goa.
+ The bills of feed in terms of tons only will be accepted for consideration of feed transport subsidy.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Varah Palan Scheme',
+                'description'=> 'An individual farmer can purchase piglets or adult sows/boars as specified below :-  Piglets (Max  20 Nos. + 2) Permissible Male/Female ratio as Females 05-10, 11-20 Males 01, 02. Adult sows and boars (Max  20 Nos. + 2) Permissible Male/Female ratio as female  03-10, 11-20 Males as 01 , 02. The  cost will be Rs.120/- per kilo live body weight per piglet /adult sow/ adult boar with a subsidy component @ 62.5% for males to a maximum of Rs.9,000/- each and @ 74%  for females to a maximum of Rs. 8000/- each. Proportionate subsidy will be released depending on number  and weight of the  piglets/ Sows/boars  purchased by the beneficiary. Subsidy will be available to farmers to a maximum of 20 females and 02 males piglets/adult pigs. For shed construction the subsidy for infrastructure will be maximum  Rs.2000/- (Rupees two thousand only ) per pig.     For Gobar gas Unit, the maximum permissible unit cost will be Rs. 50,000/- including accessories and installation. The subsidy component will be @ 75 % i.e. Rs.37,500/-. Provided that no such benefit for Gobar Gas Plant is obtained from any other Government Agencies/Department.For other equipment as per list at Annexure III, the maximum permissible cost will be Rs.42,100/-The subsidy component will be @ 75% i.e. Rs. 31,575/-.
+           Subsidy amount shall be credited to the bank account of the beneficiary through DBT.',
+                'dept_id' => 'Directorate of Animal Husbandry and Veterinary Services'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance for purchase of Barrier net and its accessories',
+                'description'=> 'The beneficiary belonging to General Category is eligible for the grant of 50% subsidy limited to Rs. 30,000/- on a unit cost of Rs. 60,000/- (excluding GST).  The beneficiary belonging to SC/ST/ Woman Category is eligible for the grant of 60% subsidy limited to Rs. 36,000/- on a unit cost of Rs. 60,000/- (excluding GST)',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial assistance for purchase of fuel Kerosene, Petrol to the fishermen for operation of out board Motors',
+                'description'=> 'The Fishemen using kerosene OBM shall be eligible for subsidy upto a maximum of Rs. 50,000. fishermen using petrol OBM shall be eligible for subsidy of Rs. 30 per litre on a maximum consumption of 1700 litres of petrol',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance for purchase of Stake net and its accessories',
+                'description'=> 'The beneficiary belonging to General Category is eligible for the grant of 50% subsidy limited to Rs. 30,000/- on a unit cost of Rs. 60,000/- (excluding GST). The beneficiary belonging to SC/ST/ Woman Category is eligible for the grant of 60% subsidy limited to Rs. 36,000/- on a unit cost of Rs. 60,000/- (excluding GST).',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance for setting up of Crab farming Unit in Goa',
+                'description'=> 'Financial assistance for setting up of the crab culture unit : 25 percent of the actual cost limited to Rs. 1,50,000 per Ha. Farmer will be eligible upto 2 ha. 
+Financial assistance for  purchase of seed and feed 50% of the actual  cost limited to Rs. 75,000 pe ha limited  to 2 ha area.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance for setting up of Ornamental Fish Unit in Goa.',
+                'description'=> 'i) For setting up of a breeding unit 50 percent of the actual cost limited to Rs. 1,50,000/-
+ii) For setting up of a Rearing unit – 50 percent of the actual cost limited to Rs. 1,50,000/-
+iii) For  setting  up   of a  Rearing unit and breeding unit 50 percent of the actual  cost  limited to Rs. 2,50,000/-.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to Brackish Water Aquaculture Farms',
+                'description'=> 'Financial Assistance for construction and Renovation of Farms :25% subsidy limited to Rs. 2.00 lakh per ha of which Rs. 45000 per Ha will be the Central Share Upto 2 ha after 5 years B)Financial Assistance for purchase of farming equipments: 50% subsidy limited to Rs. 1.00 lakh per ha. Upto 2 Ha after 5 years C) Financial Assistance for purchase of feed: 25% subsidy of the cost of feed limited to Rs. 3000 per crop per HA for 2 crops in a year Eligible every year.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to Fisherman for purchase of Fisheries Requisites Gill Nets with accessories for schedule Tribe',
+                'description'=> 'The beneficiary will be entitled for subsidy to the extend of 50% of the actual cost limited to Rs. 30,000 for purchase of nets with accesssies through bank finance or self finance. Traditional fisherman will be entitled to avail the same after 4 years for Schedule Tribe',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to Fisherman for purchase of Fisheries Requisites Gill Nets with accessories',
+                'description'=> 'The beneficiary will be entitled for subsidy to the extend of 50% of the actual cost limited to Rs. 30,000 for purchase of nets with accesssies throughbank finance or self financeTraditional fisherman will be entitled to avail the same after 4 years.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to Fresh Water Aquaculture Farm',
+                'description'=> 'a) Financial Assistance for Construction and renovation of Farm : 25% subsidy limited to Rs. 2.00 lakh per Ha. limited to 2.ha  Eligible after every 5 years
+b) Financial Assistance for purchase of feed and seed : 25% subsidy limited to Rs.50,000 per H.a limited to 2 ha Eligible on seed and feed once in every year.
+c) Financial Assistance for purchase of Farm Equipments: 50% limited to Rs. 60,000 per Ha eligible after every 5 years',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to Mussel Culture and Oyster Farming  in Goa',
+                'description'=> 'a) Setting up of unit in estuarine waters 50 percent subsidy limited to Rs. 25,000 per unit, maximum for 2 units. Each unit in the estuarine water will be of size 4 mtrs X 4mtrs
+b) setting up of units in open sea : 50 percent limited to Rs. 40,000 per unit, maximum for 2 units, Each unit in the Open sea will be of size 6 mtrs X 6 mtrs.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to purchase Outboard Motor of 2 HP to 5 HP for fitting to the fishing canoe',
+                'description'=> 'The beneficiary belonging to General Category is eligible for the grant of 50% subsidy limited to Rs. 30,000/- on a unit cost of Rs. 60,000/- (excluding GST). The beneficiary belonging to SC/ST/ Woman Category is eligible for the grant of 60% subsidy limited to Rs. 36,000/- on a unit cost of Rs. 60,000/- (excluding GST).',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to purchase Singel Net/ Small Rampon Net and its accessories',
+                'description'=> 'Financial Assistance to purchase Singel Net/ Small Rampon Net and its accessories
+The beneficiary will be entitled for subsidy to the extent of 50 percent of the actual cost limited to Rs. 50, 000. For the purchase of Singel net/ Small Rampon Net with accessories through bank finance or self finance. Traditional fishermen will be entitled to avail the same after every five years.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to purchase, construction of FRP or Wooden canoe',
+                'description'=> 'The Fishermen will be granted subsidy to the extent of 50% of the actual cost of craft limited to Rs. 60,000. per craft. fishermen will be entitled to avail the same after every 4 years.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to purchase, construction of FRP or Wooden canoe Schedule Tribe',
+                'description'=> 'The Fishermen will be granted subsidy to the extent of 50% of the actual cost of craft limited to Rs. 60,000. per craft. fishermen will be entitled to avail the same after every 4 years. for Schedule Tribe',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to purchase/construct new Fishing Craft less than 26 feet for fishing in inland waters of Goa',
+                'description'=> 'The beneficiary belonging to General Category is eligible for the grant of 50% subsidy limited to Rs. 30,000/- on a unit cost of Rs. 60,000/- (excluding GST).  The beneficiary belonging to SC/ST/ Woman Category is eligible for the grant of 60% subsidy limited to Rs. 36,000/- on a unit cost of Rs. 60,000/- (excluding GST).',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Financial Assistance to the Fish Vendors to purchase the accessories requires for fish vending such as crates , weighing balance, gloves, stool etc,',
+                'description'=> 'The beneficiary belonging to General Category is eligible for the grant of 50% subsidy limited to Rs. 10,000/- on a unit cost of Rs. 20,000/-. The beneficiary belonging to SC/ST/ Woman Category is eligible for the grant of 60% subsidy limited to Rs. 12,000/- on a unit cost of Rs. 20,000/',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Interest Subsidy on loan for Agriculture and Allied Activities',
+                'description'=> 'All bonafide agriculturist, individuals animal husbandry sector and fisheries sector with or without Kisan Credit Cards from the State of Goa  are elegible. Loans in the fisheries sector will include those purchase of Canoes, outboard motors, fishing nets, fish finders and Global Positioning Systems (GPS) for fishing vessels, setting up of aquaculture farms, mussels farming,  aquarium  fish farming, drying and processing units ice plants for fisheries and repairs and modification of fishing vessels. loan upto Rs. 5.00 lakhs and below is provided to the beneficiares in  fisheries sector.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Pradhan Mantri Matsya Sampada Yojana',
+                'description'=> 'Pradhan Mantri Matsya Sampada Yojana is launched to bring blue revolution through sustainable development of fisheries sector in the country. It aims at enhancing fish production and generation of gainful empployment opportunities in the sector.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Safety of Fishermen at Sea financial assistance towards purchase of Safety Kit which comprises of Fish finder, AIS, life Jackets and life bouys',
+                'description'=> 'Financial assistance will be provided to the extent of 50% of the Unit cost limited to Rs. 1,00,000 per kit',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'Supply of Insulated Boxes',
+                'description'=> 'The applicant engaged in selling/ marketing of fish will be eligible for 1 insulated box of 50 litres capacity and will be entitled for subsidy to the extent of 75% of the cost limited to Rs. 1500.
+The applicant actively engaged in fishing at sea with canoe will be eligible for one insulated box of 100 litres capacity and subsidy to the extent of 75 percent of the cost limited to 7000 respectively.
+The applicant engaged in fishing at sea with mechanized fishing vessel upto 6 cylinder engine will be eligble for 1 insulated box of 220 litres and 1 insulated box of 400 litres. Capacity and subsidy to the extend of 75 percent of the cost limited to Rs. 15, 000 respectively.',
+                'dept_id' => 'Directorate of Fisheries'
+            ],
+                
+
+            [
+                'name' => 'DAY NULM',
+                'description'=> 'To reduce poverty and vulnerability of the urban poor households by enabling them to access gainful self employment and skilled wage employment opportunities, resulting in an appreciable improvement in their livelihoods on a sustainable basis, through building strong grassroots level institutions of the poor. The mission would aim at providing shelters equipped with essential services to the urban homeless in a phased manner. In addition, the mission would also address livelihood concerns of the urban street vendors by facilitating access to suitable spaces, institutional credit, social security and skills to the urban street vendors for accessing emerging market opportunities.',
+                'dept_id' => 'Goa State Urban Development Agency (GSUDA)'
+            ],
+                
+
+            [
+                'name' => 'STATE AND UT GRANTS UNDER PMAY URBAN',
+                'description'=> 'Pradhan Mantri Awas Yojana (Urban) Mission launched on 25th June 2015 which intends to provide housing for all in urban areas by year 2022. The Mission provides Central Assistance to the implementing agencies through States/Union Territories (UTs) and Central Nodal Agencies (CNAs) for providing houses to all eligible families/ beneficiaries against the validated demand for houses for about 1.12 cr. PMAY (U) has made a mandatory provision for the female head of the family to be the owner or co-owner of the house under this Mission.',
+                'dept_id' => 'Goa State Urban Development Agency (GSUDA)'
+            ],
+                
+
+            [
+                'name' => 'Swachh Bharat Mission-Urban',
+                'description'=> 'The Swachh Bharat Mission - Urban (SBM-U), launched on 2nd October 2014 aims at making urban India free from open defecation and achieving 100% scientific management of municipal solid waste in 4,041 statutory towns in the country.',
+                'dept_id' => 'Goa State Urban Development Agency (GSUDA)'
+            ],
+                
+
+            [
+                'name' => 'Irrigaton Well Subsidy Scheme',
+                'description'=> 'To provide financial assistance to farmers to boost agriculture in the state which is being implemented through the designated Executive Engineers in the minor irrigation sector.',
+                'dept_id' => 'Department of Water Resources'
+            ],
+                
+
+            [
+                'name' => 'Nital Goem Nital Baim Scheme',
+                'description'=> 'To provide assistance in the form of subsidy to repairs the exixsting wells which are used for drinking as well as irrigation which is being implemented through the designated Executive Engineers.',
+                'dept_id' => 'Department of Water Resources'
+            ],
+                
+
+            [
+                'name' => 'Rainwater Harvesting Policy',
+                'description'=> 'To collect the rain water falling on the roof of houses/ buildings located on a single plot of land and storing the collected water in underground or over ground storage container/ tanks/ cisterns for continuous use/ consumption by the users/ occupants of the houses/ buildings which is being implemented through the Executive Engineer. Works Division I for North Goa District and Works Division II for South Goa District.',
+                'dept_id' => 'Department of Water Resources'
+            ],
+                
+
+            [
+                'name' => 'Special Financial Grant/ Assistance for Water Resources Activities',
+                'description'=> 'To disseminate information and sensitise the general public of the vital importance of the conservation, preservation and development of water resources through various activities which is being implemented through the Department of Water Resources.',
+                'dept_id' => 'Department of Water Resources'
+            ],
+                
+
+            [
+                'name' => 'Sant Sohirobanath Ambiye Dnyanvruddhi Shishyavrutti Bursary Scheme',
+                'description'=> 'The Government has introduced this scheme to raise the Gross Enrolment Ratio (GER) to around 45 from the present 32 so that Higher and Technical Education does not remain the privilege of the selected few. The scheme is to assist needy and meritorious students under which financial assistance will be granted towards reimbursement of fees paid for various courses under Higher and Technical Education.',
+                'dept_id' => 'Goa Education Development Corporation'
+            ],
+                

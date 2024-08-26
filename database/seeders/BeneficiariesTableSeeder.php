@@ -53,7 +53,7 @@ class BeneficiariesTableSeeder extends Seeder
                 'department_id' => $departmentId,
                 'district' => $district[$district_number],
                 'taluka' => $faker->randomElement($talukas[$district_number]),
-                'adhaar_seeded' => $faker->randomElement([1,0]),
+                'aadhaar_seeded' => $faker->randomElement([1,0]),
                 'bank_seeded' => $faker->randomElement([1,0]),
                 'scheme_id' => $schemeId,
                 'created_at' => now(),
