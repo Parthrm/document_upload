@@ -52,7 +52,7 @@
             <tr><td><strong>Department:</strong> </td><td>{{ $departmentName ?? 'N/A' }}</td></tr>
             <tr><td><strong>Scheme:</strong> </td><td>{{ $schemeName ?? 'N/A' }}</td></tr>
             <tr><td><strong>Area:</strong> </td><td>{{ $area ?? 'N/A' }}</td></tr>
-            <tr><td><strong>Area Selection:</strong></td> <td>{{ $areaSelection ?? 'N/A' }}</td></tr>
+            <tr><td><strong>Area Selection:</strong></td><td>{{is_string($areaSelection) ? $areaSelection : (is_array($areaSelection) && !empty($areaSelection) ? implode(",", $areaSelection) : 'N/A')}} </td></tr>
             <tr><td><strong>Aadhaar Seeded:</strong></td> <td>{{ $aadhaar ?? 'N/A' }}</td></tr>
             <tr><td><strong>Bank Linked:</strong></td> <td>{{ $bank ?? 'N/A' }}</td></tr>
             <tr><td><strong>Year From:</strong></td> <td>{{ $timeFrom ?? 'N/A' }}</td></tr>
@@ -60,12 +60,12 @@
         </table>
     </div>
     {{-- distribution info div --}}
-    <div>
+    {{-- <div>
         <h1 class="heading" >{{$distributionName?? "N/A"}}</h1>
         <table>
             <tr><td><strong>Department:</strong> </td><td>{{ $departmentName ?? 'N/A' }}</td></tr>
         </table>
-    </div>
+    </div> --}}
     @if(!empty($result))
         <h2 class="heading" >Data</h2>
         <table>
@@ -75,7 +75,6 @@
                     @foreach(array_keys((array) $result[0]) as $column)
                         <th>{{ $column }}</th>
                     @endforeach
-                
                 </tr>
             </thead>
             <tbody>

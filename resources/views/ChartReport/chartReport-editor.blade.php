@@ -25,8 +25,8 @@
                     {{-- what to generate --}}
                     <x-chartReport-control-panel-block title="Type">
                         <select id="resource-type" class="bg-gray-800 text-center text-white px-2 py-1 rounded-md w-full text-sm">
-                            <option value="report">Report</option>
                             <option value="chart">Chart</option>
+                            <option value="report">Report</option>
                         </select>
                     </x-chartReport-control-panel-block>
                     {{-- department selection --}}
@@ -115,6 +115,17 @@
                             <option value="beneficiaryCount">Beneficiary Count</option>
                         </select>
                     </x-chartReport-control-panel-block>
+                    {{-- chart type --}}
+                    <x-chartReport-control-panel-block title="Chart Type" id='chart-block'>
+                        <select id="chart-type" class="bg-gray-800 text-center text-white w-full px-2 py-1 rounded-md text-sm">
+                            <option value="bar">Bar</option>
+                            <option value="pie">Pie</option>
+                            <option value="line">Line</option>
+                            <option value="polarArea">Polar Area</option>
+                            <option value="doughnut">Doughnut</option>
+                            <option value="radar">Radar</option>
+                        </select>
+                    </x-chartReport-control-panel-block>
                 </div>
                 {{-- generate button --}}
                 <div class="h-[10vh] flex" >
@@ -129,10 +140,9 @@
                         Select options and Generate Chart
                     </div>
                     <div id="chart-holder" class="text-black relative ">
-                        <span id="chart-text" class="absolute top-[50%] left-[40%] z-0">Generated Chart will be shown
-                            here</span>
+                        <span id="chart-text" class="absolute top-[50%] left-[40%] z-0">Generated Chart will be shown here</span>
                         {{ view('components.charts.chart-renderer', ['id' => 'chart']) }}
-                        <div class="w-5/6  text-wrap mx-auto bg-slate-400 p-2" id="output"></div>
+                        <div class="w-5/6 text-wrap mx-auto bg-slate-400 p-2" id="report-output"></div>
                     </div>
                 </div>
             </div>

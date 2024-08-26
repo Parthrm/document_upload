@@ -29,8 +29,9 @@ class BeneficiariesTableSeeder extends Seeder
             return;
         }
 
-        $numRecords = 1500;
+        $numRecords = 2500;
         $data = [];
+        $genderList = [ 'Male', 'Female', 'Transgender'];
 
         for ($i = 0; $i < $numRecords; $i++) {
             $departmentId = $faker->randomElement($departments);
@@ -50,6 +51,7 @@ class BeneficiariesTableSeeder extends Seeder
             
             $data[] = [
                 'name' => $faker->name(),
+                'gender' => $faker->randomElement($genderList),
                 'department_id' => $departmentId,
                 'district' => $district[$district_number],
                 'taluka' => $faker->randomElement($talukas[$district_number]),

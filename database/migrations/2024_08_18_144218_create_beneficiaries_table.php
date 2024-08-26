@@ -14,6 +14,7 @@ return new class extends Migration
     Schema::create('beneficiaries', function (Blueprint $table) {
         $table->id();
         $table->string('name');
+        $table->string('gender');
         $table->string('district');
         $table->string('taluka');
         $table->integer('department_id');

@@ -6,41 +6,14 @@
             
     <div class="flex justify-center m-4">
         <div class="w-[82%] max-w-7xl bg-white p-5 rounded-lg shadow-md shadow-[#00000048]">
-            {{-- <div class="mb-5">
-                <h1 class="text-2xl font-bold mb-3 text-[#333]">{{$story->title}}</h1>
-            </div>
-            <div class="mb-5">
-                <p class="text-sm leading-4 text-[#555] ">{{$story->description}}</p>
-            </div> --}}
             <div class="flex justify-between text-sm text-[#777]">
                 <p class="m-0"><span class="text-black font-bold" >Author : </span>{{$story->author}}</p>
                 <p class="m-0"><span class="text-black font-bold" >Last Updated : </span>{{$story->updated_at}}</p>
             </div>
             </div>
         </div>
-        {{-- <div class="border-solid border-black border-2 w-4/5 px-3 py-2 my-5">
-            <h1 class="text-center font-bold text-xl text-blue-700" >Story Details</h1>
-            <div>
-                <div class="text-blue-700 font-bold " >Name : </div>
-                <div>{{$story->title}}</div>
-            </div>
-            <div>
-                <div class="text-blue-700 font-bold " >Description : </div>
-                <div>{{$story->description}}</div>
-            </div>
-            <div class="flex gap-6" >
-                <div class="flex gap-3">
-                    <div class="text-blue-700 font-bold " >Author : </div>
-                    <div>{{$story->author}}</div>
-                </div>
-                <div class="flex gap-3" >
-                    <div class="text-blue-700 font-bold " >Last Updated : </div>
-                    <div>{{$story->updated_at}}</div>
-                </div>
-            </div>
-        </div> --}}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script> --}}
         <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
     
     </div>
@@ -53,7 +26,7 @@
         const options = {
             readOnly: true,
             modules: {
-            toolbar: null
+                toolbar: null
             },
             theme: 'snow'
         };

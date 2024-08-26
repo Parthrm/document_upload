@@ -30,9 +30,8 @@ class ChartReportController extends Controller
         else
         return $this->report_request($request);
     }
-
     private function chart_request(Request $request){
-        
+
         $department = $request->input('department');
         $scheme = $request->input('scheme');
         $area = $request->input('area');
@@ -42,6 +41,86 @@ class ChartReportController extends Controller
         $distributionType = $request->input('distributionType');
         $timeFrom = $request->input('timeFrom');
         $timeTo = $request->input('timeTo');
+
+        
+        $departmentName = $this->getDepartmentName($department);
+        $schemeName = $this->getSchemeName($scheme);
+        $distributionName = $this->getDistributionName($distributionType);
+
+        $columnsList = ['name', 'district', 'taluka', 'gender', 'aadhaar_seeded','bank_seeded'];
+
+        $result = DB::table('beneficiaries');
+        $result = $this->filterDepartment($department, $result);
+        $result = $this->filterScheme($scheme, $result);
+        $result = $this->filterAadhaar($aadhaar, $result);
+        $result = $this->filterBank($bank, $result);
+        $result = $this->filterTime($timeFrom,$timeTo,$result);
+        switch ($distributionType) {
+            case 'areaWise':
+                switch ($area) {
+                    case 'state':
+                        $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) as total_records')
+                                ->groupBy('year')->get();
+                        $year = [];
+                        $count = [];
+                        foreach ($result as $row) {
+                            $year[] = $row->year;
+                            $count[] = $row->total_records;
+                        }
+                        return response()->json(
+                            [
+                                'data' =>[
+                                    'labels' => $year,
+                                    'datasets' => [
+                                        [
+                                            'label' => $areaSelection,
+                                            'data' => $count,
+                                        ]
+                                    ]
+                                        ],
+                                'title' => $distributionName
+                            ]);
+                    case 'district':
+                        $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,district ')
+                                ->groupBy('district')
+                                ->groupBy('year')
+                                ->orderBy('year')
+                                ->get();
+                        // $data1 = $result->where('district' ,'North Goa')->get();
+                        // $data2 = $result->where('district' ,'South Goa')->get();
+                        $year = [];
+                        $count = [];
+                        foreach ($result as $row) {
+                            $year[] = $row->year;
+                            $count[] = $row->total_records;
+                        }
+                        return response()->json(
+                            [
+                                'data' =>[
+                                    'labels' => $year,
+                                    'datasets' => [
+                                        [
+                                            'label' => $areaSelection,
+                                            'data' => $count,
+                                        ]
+                                    ]
+                                        ],
+                                'title' => $distributionName
+                            ]);
+                    
+                    default:
+                        # code...
+                        break;
+                }
+                break;
+            case 'aadhaarSeed':$result = $result->orderBy('aadhaar_seeded');break;
+            case 'bankLinked':$result = $result->orderBy('bank_seeded');break;
+            case 'maleFemale':$result = $result->orderBy('gender');break;
+            case 'beneficiaryCount':break;
+        }
+        
+        // $result = $this->filterArea($area,$areaSelection,$result);
+        // $result = $result->select('year','total_records',...$columnsList,)->get();
     }
     private function report_request(Request $request){
         $department = $request->input('department');
@@ -57,34 +136,25 @@ class ChartReportController extends Controller
         $departmentName = $this->getDepartmentName($department);
         $schemeName = $this->getSchemeName($scheme);
         $distributionName = $this->getDistributionName($distributionType);
-        /*
-        $distributionType
-        */
+
+        $columnsList = ['name', 'district', 'taluka', 'gender', 'aadhaar_seeded','bank_seeded'];
+
         $result = DB::table('beneficiaries');
+        $result = $this->filterDepartment($department, $result);
+        $result = $this->filterScheme($scheme, $result);
+        $result = $this->filterAadhaar($aadhaar, $result);
+        $result = $this->filterBank($bank, $result);
+        $result = $this->filterTime($timeFrom,$timeTo,$result);
         switch ($distributionType) {
-            case 'areaWise':
-                $result = $this->filterDepartment($department, $result);
-                $result = $this->filterScheme($scheme, $result);
-                $result = $this->filterAadhaar($aadhaar, $result);
-                $result = $this->filterBank($bank, $result);  
-                $result = $this->filterTime($timeFrom,$timeTo,$result);  
-                switch ($area) {
-                    case 'goa':break;
-                    case 'district':
-                        $result = $this->filterDistrict($areaSelection, $result);
-                        break;
-                    case 'taluka':
-                        $result = $this->filterTaluka($areaSelection, $result);
-                        // $result = $result->orderBy('taluka');
-                        break;
-                }
-                $result = $result->select('name', 'district', 'taluka','aadhaar_seeded','bank_seeded')->get();
-                $result = $this->substituteAadhaarBank($result);
-                break;
-            default:
-                # code...
-                break;
+            case 'areaWise':break;
+            case 'aadhaarSeed':$result = $result->orderBy('aadhaar_seeded');break;
+            case 'bankLinked':$result = $result->orderBy('bank_seeded');break;
+            case 'maleFemale':$result = $result->orderBy('gender');break;
+            case 'beneficiaryCount':break;
         }
+        $result = $this->filterArea($area,$areaSelection,$result);
+        $result = $result->select(...$columnsList)->get();
+        $result = $this->substituteAadhaarBank($result);
         return view('ChartReport.chartReport-report-view',
         compact('result','departmentName','schemeName','area','areaSelection','aadhaar','bank','distributionType','timeFrom','timeTo','distributionName'));
     }
@@ -156,5 +226,20 @@ class ChartReportController extends Controller
         }
         return $result;
     }
+    private function filterArea($area,$areaSelection,$result){
+        switch ($area) {
+            case 'state':
+                $result = $result->orderBy('district')->orderBy('taluka');
+                break;
+            case 'district':
+                $result = $this->filterDistrict($areaSelection, $result);
+                $result = $result->orderBy('district')->orderBy('taluka');
+                break;
+            case 'taluka':
+                $result = $this->filterTaluka($areaSelection, $result);
+                $result = $result->orderBy('district')->orderBy('taluka');
+                break;
+        }
+        return $result;
+    }
 }
-

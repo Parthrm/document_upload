@@ -5,11 +5,12 @@ $(document).ready(function() {
         if($(this).val()=='chart')
         {
             $('#gen_chart').text('Generate Chart');
-            $('#chart').show();
+            $('#chart-block').show();
         }
         else
         {
-            $('#chart').hide();
+            $('#gen_chart').text('Generate Report');
+            $('#chart-block').hide();
         }
     })
 
@@ -96,12 +97,13 @@ $(document).ready(function() {
             department: $('#department').val(),
             scheme: $('#scheme').val(),
             area: $('input[name="area"]:checked').val(),
-            areaSelection: $('#area-selection').val(),
+            areaSelection: $('input[name="area"]:checked').val() == 'state' ? 'goa' : $('#area-selection').val(),
             aadhaar: $('#aadhaar').val(),
             bank: $('#bank').val(),
             distributionType: $('#distribution-type').val(),
             timeFrom: $('#time-from').val(),
             timeTo: $('#time-to').val(),
+            chartType: $('#chart-type').val(),
         };
         if(front_end_checking()){
             $.ajax({
@@ -112,33 +114,17 @@ $(document).ready(function() {
                     // Handle the response from the server, e.g., update the chart
                     console.log(response);
                     if(data.type === 'report'){
-                        $('#output').html(response);
+                        $('#report-output').html(response);
                         $('#title').text('Report Generation');
+                        $('#chart').hide();
                     }
                     else{
-                        switch (data.distributionType) {
-                            case 'areaWise':
-                                $('#title').text('Area Wise Distribution');
-                                break;
-                            case 'aadharSeead':
-                                $('#title').text('Aadhaar Seeded Distribution');
-                                break;
-                            case 'bankLinked':
-                                $('#title').text('Bank account linked Distribution');
-                                break;
-                            case 'maleFemale':
-                                $('#title').text('Male-Female Distribution');
-                                break;
-                            case 'beneficiaryCount':
-                                $('#title').text('Time Beneficiary Count');
-                                break;
-                            default:
-                                $('#title').text('Error occurred, please re-select values and generate');
-                        }
-
+                        $('#chart').show();
+                        $('#title').text(response.title);
+                        $('#report-output').hide();
+                        load_chart(chartEle, $('#chart-type').val(), response.data);
                     }
                     $('#chart-text').hide();
-                    // load_chart(chartEle, $('#graph-type').val(), response);
                     // $('#output').text(JSON.stringify(response,null,2));
     
                 },
