@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Query\Builder;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ChartReportController extends Controller
 {
@@ -58,7 +59,7 @@ class ChartReportController extends Controller
         switch ($distributionType) {
             case 'areaWise':
                 switch ($area) {
-                    case 'state':
+                    case 'state':{
                         $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) as total_records')
                                 ->groupBy('year')->get();
                         $year = [];
@@ -77,40 +78,79 @@ class ChartReportController extends Controller
                                             'data' => $count,
                                         ]
                                     ]
-                                        ],
+                                ],
                                 'title' => $distributionName
                             ]);
-                    case 'district':
-                        $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,district ')
-                                ->groupBy('district')
-                                ->groupBy('year')
-                                ->orderBy('year')
-                                ->get();
-                        // $data1 = $result->where('district' ,'North Goa')->get();
-                        // $data2 = $result->where('district' ,'South Goa')->get();
-                        $year = [];
-                        $count = [];
-                        foreach ($result as $row) {
-                            $year[] = $row->year;
-                            $count[] = $row->total_records;
+                    }
+                    case 'district':{
+                        $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,district ')->groupBy('district')->groupBy('year')->orderBy('year')->get();
+                        $reorientedData = [
+                            'labels' => [],
+                            'datasets' => [],
+                        ];
+                        $districts = [];
+                        $years = [];
+                        foreach ($result as $item) {
+                            $year = $item->year;
+                            $district = $item->district;
+                            $num = $item->num;
+                            if (!in_array($year, $years)) {
+                                $years[] = $year;
+                            }
+                            if (!isset($districts[$district])) {
+                                $districts[$district] = array_fill(0, count($years), 0);
+                            }
+                            $yearIndex = array_search($year, $years);
+                            $districts[$district][$yearIndex] = $num;
+                        }
+                        $reorientedData['labels'] = $years;
+                        foreach ($districts as $district => $dataPoints) {
+                            $reorientedData['datasets'][] = [
+                                'label' => $district,
+                                'data' => $dataPoints,
+                            ];
+                        }
+                        
+                        // print_r($reorientedData);
+                        return response()->json(
+                            [
+                                'data' => $reorientedData,
+                                'title' => $distributionName
+                            ]);
+                    }
+                    case 'taluka':
+                        $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,taluka ')->groupBy('taluka')->groupBy('year')->orderBy('year')->get();
+                        $reorientedData = [
+                            'labels' => [],
+                            'datasets' => [],
+                        ];
+                        $talukas = [];
+                        $years = [];
+                        foreach ($result as $item) {
+                            $year = $item->year;
+                            $taluka = $item->taluka;
+                            $num = $item->num;
+                            if (!in_array($year, $years)) {
+                                $years[] = $year;
+                            }
+                            if (!isset($talukas[$taluka])) {
+                                $talukas[$taluka] = array_fill(0, count($years), 0);
+                            }
+                            $yearIndex = array_search($year, $years);
+                            $talukas[$taluka][$yearIndex] = $num;
+                        }
+                        $reorientedData['labels'] = $years;
+                        foreach($talukas as $taluka => $dataPoints) {
+                            $reorientedData['datasets'][] = [
+                                'label' => $taluka,
+                                'data' => $dataPoints,
+                            ];
                         }
                         return response()->json(
                             [
-                                'data' =>[
-                                    'labels' => $year,
-                                    'datasets' => [
-                                        [
-                                            'label' => $areaSelection,
-                                            'data' => $count,
-                                        ]
-                                    ]
-                                        ],
+                                'data' =>$reorientedData,
                                 'title' => $distributionName
                             ]);
-                    
-                    default:
-                        # code...
-                        break;
                 }
                 break;
             case 'aadhaarSeed':$result = $result->orderBy('aadhaar_seeded');break;
@@ -132,6 +172,7 @@ class ChartReportController extends Controller
         $distributionType = $request->input('distributionType');
         $timeFrom = $request->input('timeFrom');
         $timeTo = $request->input('timeTo');
+        $print = $request->input('print');
 
         $departmentName = $this->getDepartmentName($department);
         $schemeName = $this->getSchemeName($scheme);
@@ -155,8 +196,13 @@ class ChartReportController extends Controller
         $result = $this->filterArea($area,$areaSelection,$result);
         $result = $result->select(...$columnsList)->get();
         $result = $this->substituteAadhaarBank($result);
-        return view('ChartReport.chartReport-report-view',
-        compact('result','departmentName','schemeName','area','areaSelection','aadhaar','bank','distributionType','timeFrom','timeTo','distributionName'));
+        
+        if ($print=='true') {
+            $pdf = Pdf::loadView('ChartReport.chartReport-report-view',compact('result','departmentName','schemeName','area','areaSelection','aadhaar','bank','distributionType','timeFrom','timeTo','distributionName'));
+            return $pdf->download('document.pdf');
+        }
+        else        
+        return view('ChartReport.chartReport-report-view',compact('result','departmentName','schemeName','area','areaSelection','aadhaar','bank','distributionType','timeFrom','timeTo','distributionName'));
     }
     private function filterAadhaar($aadhaar,$result) {
         switch($aadhaar){

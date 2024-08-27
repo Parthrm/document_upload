@@ -63,10 +63,10 @@ class ReportController extends Controller
 
         // Generate the PDF
         $pdf = PDF::loadView('reports.report', compact('data', 'departmentName', 'department', 'schemeName', 'distributionType', 'areaType'));
+        return $pdf->download('report.pdf');
         // ini_set('memory_limit', '-1');
         // Return the PDF as a download
         // return $pdf->stream('document.pdf');
-        return $pdf->download('report.pdf');
     }
 
     private function fetchReportData2($department, $scheme)

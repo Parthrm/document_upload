@@ -17,7 +17,7 @@ Route::get('/show/{id}', [documentController::class,'show']); // show document
 Route::delete('/delete/{id}', [documentController::class,'destroy']); // delete document
 
 // Story routes
-Route::get('/successStory',[successStoryController::class,'index']); // show all stories
+Route::get('/successStory',[successStoryController::class,'index'])->name('success_story.index'); // show all stories
 Route::get('/story/{id}',[successStoryController::class,'show']); // show single
 Route::get('/makeStory',[successStoryController::class,'create']); // create story
 Route::post('/storeStory',[successStoryController::class,'store']); // store story
@@ -35,4 +35,4 @@ Route::get('/generate-report-request', [ReportController::class,'generateReport'
 // Chart-Report routes
 Route::get('/chart-report', [ChartReportController::class,'view']);
 Route::get('/chart-report/schemes/{id}', [ChartReportController::class, 'getSchemes']); // get the schemes for the given department id
-Route::get('/chart-report/result', [ChartReportController::class, 'generateResponse']); // get the schemes for the given department id
+Route::get('/chart-report/result', [ChartReportController::class, 'generateResponse']); // API call for data

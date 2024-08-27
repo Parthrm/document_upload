@@ -92,53 +92,37 @@ $(document).ready(function() {
     };
 
     $('#gen_chart').click(function() {
-        var data = {
-            type: $('#resource-type').val(),
-            department: $('#department').val(),
-            scheme: $('#scheme').val(),
-            area: $('input[name="area"]:checked').val(),
-            areaSelection: $('input[name="area"]:checked').val() == 'state' ? 'goa' : $('#area-selection').val(),
-            aadhaar: $('#aadhaar').val(),
-            bank: $('#bank').val(),
-            distributionType: $('#distribution-type').val(),
-            timeFrom: $('#time-from').val(),
-            timeTo: $('#time-to').val(),
-            chartType: $('#chart-type').val(),
-        };
         if(front_end_checking()){
-            $.ajax({
-                url: '/chart-report/result', // Replace with your actual endpoint
-                type: 'GET',
-                data: data,
-                success: function(response) {
-                    // Handle the response from the server, e.g., update the chart
-                    console.log(response);
-                    if(data.type === 'report'){
-                        $('#report-output').html(response);
-                        $('#title').text('Report Generation');
-                        $('#chart').hide();
-                    }
-                    else{
-                        $('#chart').show();
-                        $('#title').text(response.title);
-                        $('#report-output').hide();
-                        load_chart(chartEle, $('#chart-type').val(), response.data);
-                    }
-                    $('#chart-text').hide();
-                    // $('#output').text(JSON.stringify(response,null,2));
-    
-                },
-                error: function(error) {
-                    console.error('Error:', error);
-                }
-            });
+            load_result(false);
+        }
+    });
+    $('#print').on('click',function(event){
+        if(front_end_checking()){
+            var domainName = window.location.origin;
+            var route = '/chart-report/result';
+            var data = {
+                type: $('#resource-type').val(),
+                department: $('#department').val(),
+                scheme: $('#scheme').val(),
+                area: $('input[name="area"]:checked').val(),
+                areaSelection: $('input[name="area"]:checked').val() == 'state' ? 'goa' : $('#area-selection').val(),
+                aadhaar: $('#aadhaar').val(),
+                bank: $('#bank').val(),
+                distributionType: $('#distribution-type').val(),
+                timeFrom: $('#time-from').val(),
+                timeTo: $('#time-to').val(),
+                chartType: $('#chart-type').val(),
+                print: true,
+            };
+            var queryString = $.param(data);
+            var fullUrl = domainName + route + '?' + queryString;
+            window.open(fullUrl, '_blank');
         }
     });
 
     function front_end_checking() {
         var area = $('input[name="area"]:checked').val();
         var areaSelection = $('#area-selection').val();
-
         var district_names = [ 'northGoa' , 'southGoa' ];
         var taluka_names = [ "bardez","bicholim","canacona","dharbandora","mormugao","pernem","ponda","salcette","sanguem","sattari","tiswadi","quepem"];
         // TODO do the taluka checking ones dont return the boolean value
@@ -155,7 +139,6 @@ $(document).ready(function() {
                 if(district_names.includes(areaSelection) || areaSelection === 'goa')
                 {
                     alert('Select a taluka to continue');
-                    console.log(areaSelection);
                     return false;
                 }
                 break;
@@ -167,6 +150,51 @@ $(document).ready(function() {
         return true;
     }
 
+    function load_result() {
+        var data = {
+            type: $('#resource-type').val(),
+            department: $('#department').val(),
+            scheme: $('#scheme').val(),
+            area: $('input[name="area"]:checked').val(),
+            areaSelection: $('input[name="area"]:checked').val() == 'state' ? 'goa' : $('#area-selection').val(),
+            aadhaar: $('#aadhaar').val(),
+            bank: $('#bank').val(),
+            distributionType: $('#distribution-type').val(),
+            timeFrom: $('#time-from').val(),
+            timeTo: $('#time-to').val(),
+            chartType: $('#chart-type').val(),
+            print: false,
+        };
+        $.ajax({
+            url: '/chart-report/result', // Replace with your actual endpoint
+            type: 'GET',
+            data: data,
+            success: function(response) {
+                // console.log(print);
+                // Handle the response from the server, e.g., update the chart
+                if(data.type === 'report'){
+                    $('#report-output').html(response);
+                    $('#title').text('Report Generation');
+                    $('#chart').hide();
+                    $('#report-output').show();
+                }
+                else{
+                    $('#chart').show();
+                    $('#title').text(response.title);
+                    $('#report-output').hide();
+                    load_chart(chartEle, $('#chart-type').val(), response.data);
+                }
+                $('#chart-text').hide();
+                $('#print').show();
+                
+                // $('#output').text(JSON.stringify(response,null,2));
+            },
+            error: function(error) {
+                console.error('Error:', error);
+            }
+        });
+    }
+
     // load_chart(chartEle, 'bar', data);
     let chartEle = document.getElementById('chart').getContext('2d');
     // Trigger change event on page load to populate select2 initially
@@ -176,10 +204,11 @@ $(document).ready(function() {
     $('#scheme').select2();
     $('#distribution-type').select2();
     $('#department').select2();
+    $('#print').hide();
     // $('#area-selection').select2();
 
     // delete this code these lines set default values
-    $("#state").prop("checked", true)
-    $("#time-from").val(2020)
-    $("#time-to").val(2024)
+    $("#state").prop("checked", true);
+    $("#time-from").val(2020);
+    $("#time-to").val(2024);
 });

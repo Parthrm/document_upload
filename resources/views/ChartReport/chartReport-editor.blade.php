@@ -142,7 +142,8 @@
                     <div id="chart-holder" class="text-black relative ">
                         <span id="chart-text" class="absolute top-[50%] left-[40%] z-0">Generated Chart will be shown here</span>
                         {{ view('components.charts.chart-renderer', ['id' => 'chart']) }}
-                        <div class="w-5/6 text-wrap mx-auto bg-slate-400 p-2" id="report-output"></div>
+                        <div class="w-5/6 text-wrap mx-auto bg-slate-400 p-2 rounded-lg" id="report-output"></div>       
+                        <div class="flex"><a target="_blank" href="#" class="mx-auto my-8 px-3 py-2 font-semibold rounded-lg bg-yellow-400 hover:bg-yellow-500 hover:scale-105 transition-all ease-in-out duration-300" id="print">Print</a></div>
                     </div>
                 </div>
             </div>
