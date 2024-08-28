@@ -66,7 +66,8 @@
             <tr><td><strong>Department:</strong> </td><td>{{ $departmentName ?? 'N/A' }}</td></tr>
         </table>
     </div> --}}
-    @if(!empty($result))
+    {{-- {{dd($result)}} --}}
+    @if(isset($result[0]))
         <h2 class="heading" >Data</h2>
         <table>
             <thead>
@@ -93,6 +94,6 @@
             </tbody>
         </table>
     @else
-        <h1 style="text-align: center;">No data available</h1>
+        <h1 style="text-align: center; margin-top: 1rem;">No data available with these parameters</h1>
     @endif
 </div>

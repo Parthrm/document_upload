@@ -61,6 +61,16 @@ let options_pie = {
 let options_line = {
     scales: {
         y: {
+            title:{
+                text:"Frequency",
+                display:true,
+                align:'center',
+                color:'black',
+                font:{
+                    weight:"bold",
+                }
+            },
+
             beginAtZero: true,
             grid: {
                 color: "#F0F0F0",
@@ -112,6 +122,15 @@ let options_line = {
 let options_bar = {
     scales: {
         y: {
+            title:{
+                text:"Frequency",
+                display:true,
+                align:'center',
+                color:'black',
+                font:{
+                    weight:"bold",
+                }
+            },
             beginAtZero: true,
             grid: {
                 color: "#F0F0F0",

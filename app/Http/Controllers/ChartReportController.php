@@ -49,120 +49,205 @@ class ChartReportController extends Controller
         $distributionName = $this->getDistributionName($distributionType);
 
         $columnsList = ['name', 'district', 'taluka', 'gender', 'aadhaar_seeded','bank_seeded'];
-
         $result = DB::table('beneficiaries');
         $result = $this->filterDepartment($department, $result);
         $result = $this->filterScheme($scheme, $result);
         $result = $this->filterAadhaar($aadhaar, $result);
         $result = $this->filterBank($bank, $result);
         $result = $this->filterTime($timeFrom,$timeTo,$result);
+        $reorientedData = ['labels' => [],'datasets' => [],];
+        $years = [];
         switch ($distributionType) {
-            case 'areaWise':
+            case 'areaWise':{
                 switch ($area) {
                     case 'state':{
                         $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) as total_records')
-                                ->groupBy('year')->get();
-                        $year = [];
+                                        ->groupBy('year')
+                                        ->get();
                         $count = [];
                         foreach ($result as $row) {
-                            $year[] = $row->year;
+                            $years[] = $row->year;
                             $count[] = $row->total_records;
                         }
-                        return response()->json(
-                            [
-                                'data' =>[
-                                    'labels' => $year,
-                                    'datasets' => [
-                                        [
-                                            'label' => $areaSelection,
-                                            'data' => $count,
-                                        ]
-                                    ]
-                                ],
-                                'title' => $distributionName
-                            ]);
+                        $reorientedData['labels'] = $years;
+                        $reorientedData['datasets'][] = [
+                            'label' => $areaSelection,
+                            'data' => $count,
+                        ];
+                        break;
                     }
                     case 'district':{
-                        $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,district ')->groupBy('district')->groupBy('year')->orderBy('year')->get();
-                        $reorientedData = [
-                            'labels' => [],
-                            'datasets' => [],
-                        ];
-                        $districts = [];
-                        $years = [];
+                        $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,district ')
+                                        ->groupBy('district')
+                                        ->groupBy('year')
+                                        ->orderBy('year')
+                                        ->get();
+
+                        $districtList = ["North Goa","South Goa"];
+                        foreach ($result as $item) {
+                            $year = $item->year;
+                            if (!in_array($year, $years)) {
+                                $years[] = $year;
+                            }
+                        }
+                        $reorientedData['labels'] = $years;
+                        foreach ($districtList as $district) {
+                            $reorientedData['datasets'][] = [
+                                'label'=> $district,
+                                'data' => array_fill(0, count($years), 0)
+                            ];
+                        }
                         foreach ($result as $item) {
                             $year = $item->year;
                             $district = $item->district;
                             $num = $item->num;
+                            $year_index = array_search($year,$years);
+                            $district_index = array_search($district,$districtList);
+                            $reorientedData['datasets'][$district_index]['data'][$year_index]=$num;
+                        }
+                        break;
+                    }
+                    case 'taluka':{
+                        $result =   $result ->selectRaw('YEAR(created_at) as year, COUNT(*) num,taluka ')
+                                            ->groupBy('taluka')
+                                            ->groupBy('year')
+                                            ->orderBy('year')
+                                            ->get();
+                        $talukaList = ["Bardez","Bicholim","Canacona","Dharbandora","Mormugao","Pernem","Ponda","Quepem","Salcette","Sanguem","Sattari","Tiswadi",];
+                        foreach ($result as $item) {
+                            $year = $item->year;
                             if (!in_array($year, $years)) {
                                 $years[] = $year;
                             }
-                            if (!isset($districts[$district])) {
-                                $districts[$district] = array_fill(0, count($years), 0);
-                            }
-                            $yearIndex = array_search($year, $years);
-                            $districts[$district][$yearIndex] = $num;
                         }
                         $reorientedData['labels'] = $years;
-                        foreach ($districts as $district => $dataPoints) {
+                        foreach ($talukaList as $taluka) {
                             $reorientedData['datasets'][] = [
-                                'label' => $district,
-                                'data' => $dataPoints,
+                                'label'=> $taluka,
+                                'data' => array_fill(0, count($years), 0)
                             ];
                         }
-                        
-                        // print_r($reorientedData);
-                        return response()->json(
-                            [
-                                'data' => $reorientedData,
-                                'title' => $distributionName
-                            ]);
-                    }
-                    case 'taluka':
-                        $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,taluka ')->groupBy('taluka')->groupBy('year')->orderBy('year')->get();
-                        $reorientedData = [
-                            'labels' => [],
-                            'datasets' => [],
-                        ];
-                        $talukas = [];
-                        $years = [];
                         foreach ($result as $item) {
                             $year = $item->year;
                             $taluka = $item->taluka;
                             $num = $item->num;
-                            if (!in_array($year, $years)) {
-                                $years[] = $year;
-                            }
-                            if (!isset($talukas[$taluka])) {
-                                $talukas[$taluka] = array_fill(0, count($years), 0);
-                            }
-                            $yearIndex = array_search($year, $years);
-                            $talukas[$taluka][$yearIndex] = $num;
+                            $year_index = array_search($year,$years);
+                            $taluka_index = array_search($taluka,$talukaList);
+                            $reorientedData['datasets'][$taluka_index]['data'][$year_index]=$num;
                         }
-                        $reorientedData['labels'] = $years;
-                        foreach($talukas as $taluka => $dataPoints) {
-                            $reorientedData['datasets'][] = [
-                                'label' => $taluka,
-                                'data' => $dataPoints,
-                            ];
-                        }
-                        return response()->json(
-                            [
-                                'data' =>$reorientedData,
-                                'title' => $distributionName
-                            ]);
+                        break;
+                    }
                 }
                 break;
-            case 'aadhaarSeed':$result = $result->orderBy('aadhaar_seeded');break;
-            case 'bankLinked':$result = $result->orderBy('bank_seeded');break;
-            case 'maleFemale':$result = $result->orderBy('gender');break;
-            case 'beneficiaryCount':break;
+            }
+            case 'aadhaarSeed':{
+                $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,aadhaar_seeded')
+                                ->groupBy('aadhaar_seeded')
+                                ->groupBy('year')
+                                ->orderBy('year')
+                                ->get();
+                $reorientedData['labels'] = ['Aadhaar Seeded','Not Aadhaar Seeded'];
+                foreach ($result as $item) {
+                    $year = $item->year;
+                    if (!in_array($year, $years)) {
+                        $years[] = $year;
+                        $reorientedData['datasets'][] = [
+                            'label' => "$year",
+                            'data' => [0,0]
+                        ];
+                    }
+                }
+                foreach ($result as $item) {
+                    $year = $item->year;
+                    $aadhaar_seeded = $item->aadhaar_seeded;
+                    $num = $item->num;
+                    $aadhaar_seeded_index = array_search($year,$years);
+                    $reorientedData['datasets'][$aadhaar_seeded_index]['data'][$aadhaar_seeded]=$num;
+                }
+                break;
+            }
+            case 'bankLinked':{
+                $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,bank_seeded')
+                                ->groupBy('bank_seeded')
+                                ->groupBy('year')
+                                ->orderBy('year')
+                                ->get();
+                $reorientedData['labels'] = ['Bank Seeded','Not Bank Seeded'];
+                foreach ($result as $item) {
+                    $year = $item->year;
+                    if (!in_array($year, $years)) {
+                        $years[] = $year;
+                        $reorientedData['datasets'][] = [
+                            'label' => "$year",
+                            'data' => [0,0]
+                        ];
+                    }
+                }
+                foreach ($result as $item) {
+                    $year = $item->year;
+                    $bank_seeded = $item->bank_seeded;
+                    $num = $item->num;
+                    $bank_seeded_index = array_search($year,$years);
+                    $reorientedData['datasets'][$bank_seeded_index]['data'][$bank_seeded]=$num;
+                }
+                break;
+            }
+            case 'gender':{
+                $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num,gender')
+                                ->groupBy('gender')
+                                ->groupBy('year')
+                                ->orderBy('year')
+                                ->get();
+                $reorientedData['labels'] = ['Male','Female','Transgender'];
+                $gender_index = ['Male'=>0,'Female'=>1,'Transgender'=>2];
+                foreach ($result as $item) {
+                    $year = $item->year;
+                    if (!in_array($year, $years)) {
+                        $years[] = $year;
+                        $reorientedData['datasets'][] = [
+                            'label' => "$year",
+                            'data' => [0,0,0]
+                        ];
+                    }
+                }
+                foreach ($result as $item) {
+                    $year = $item->year;
+                    $gender = $item->gender;
+                    $num = $item->num;
+                    $year_index = array_search($year,$years);
+                    $reorientedData['datasets'][$year_index]['data'][$gender_index[$gender]]=$num;
+                }
+                break;
+            }
+            case 'beneficiaryCount':{
+                $result = $result->selectRaw('YEAR(created_at) as year, COUNT(*) num')
+                                ->groupBy('year')
+                                ->orderBy('year')
+                                ->get();
+                foreach ($result as $item) {
+                    $year = $item->year;
+                    $num = $item->num;
+                    if (!in_array($year, $years)) {
+                        $years[] = $year;
+                        $reorientedData['datasets'][] = [
+                            'label' => "$year",
+                            'data' => [$num]
+                        ];
+                    }
+                }
+                $reorientedData['labels'] = ["Years"];
+                break;
+            }
         }
-        
-        // $result = $this->filterArea($area,$areaSelection,$result);
-        // $result = $result->select('year','total_records',...$columnsList,)->get();
+        return response()->json(
+        [
+            'data' =>$reorientedData,
+            'title' => $distributionName
+        ]);
     }
     private function report_request(Request $request){
+        // fetch the url data
+        $url = $request->fullUrl();
         $department = $request->input('department');
         $scheme = $request->input('scheme');
         $area = $request->input('area');
@@ -174,11 +259,14 @@ class ChartReportController extends Controller
         $timeTo = $request->input('timeTo');
         $print = $request->input('print');
 
+        // fetch the data from other tables
         $departmentName = $this->getDepartmentName($department);
         $schemeName = $this->getSchemeName($scheme);
         $distributionName = $this->getDistributionName($distributionType);
-
+        
+        // list of columns to be displayed in the report with their order 
         $columnsList = ['name', 'district', 'taluka', 'gender', 'aadhaar_seeded','bank_seeded'];
+        $fetch_only_date = false;
 
         $result = DB::table('beneficiaries');
         $result = $this->filterDepartment($department, $result);
@@ -188,13 +276,22 @@ class ChartReportController extends Controller
         $result = $this->filterTime($timeFrom,$timeTo,$result);
         switch ($distributionType) {
             case 'areaWise':break;
-            case 'aadhaarSeed':$result = $result->orderBy('aadhaar_seeded');break;
-            case 'bankLinked':$result = $result->orderBy('bank_seeded');break;
-            case 'maleFemale':$result = $result->orderBy('gender');break;
+            case 'aadhaarSeed':$result = $result->orderBy('aadhaar_seeded','DESC');break;
+            case 'bankLinked':$result = $result->orderBy('bank_seeded','DESC');break;
+            case 'gender':$result = $result->orderBy('gender');break;
             case 'beneficiaryCount':break;
         }
         $result = $this->filterArea($area,$areaSelection,$result);
-        $result = $result->select(...$columnsList)->get();
+        if($fetch_only_date){
+            $result = $result->select(...$columnsList);
+            $result = $result->selectRaw('DATE(created_at) as date');
+        }
+        else{
+            $columnsList += ['create_at']; 
+            $result = $result->select(...$columnsList);
+            // $result = $result->select('create_at');
+        }
+        $result = $result->get();
         $result = $this->substituteAadhaarBank($result);
         
         if ($print=='true') {
@@ -259,7 +356,7 @@ class ChartReportController extends Controller
             case 'areaWise':return "Area Wise Distribution";
             case 'aadhaarSeed' : return "Aadhaar Seeded Distribution";
             case 'bankLinked' : return "Bank account linked Distribution";
-            case 'maleFemale' : return "Male-Female Distribution";
+            case 'gender' : return "Male-Female Distribution";
             case 'beneficiaryCount' : return "Beneficiary Count";
             default:return "N/A";
         }

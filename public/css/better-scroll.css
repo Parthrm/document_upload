@@ -1,6 +1,4 @@
 .better-scroll {
-    overflow-y: scroll;
-    overflow-x: hidden;
     --sb-track-color: #363636;
     --sb-thumb-color: #808080;
     --sb-size: 8px;

@@ -96,29 +96,6 @@ $(document).ready(function() {
             load_result(false);
         }
     });
-    $('#print').on('click',function(event){
-        if(front_end_checking()){
-            var domainName = window.location.origin;
-            var route = '/chart-report/result';
-            var data = {
-                type: $('#resource-type').val(),
-                department: $('#department').val(),
-                scheme: $('#scheme').val(),
-                area: $('input[name="area"]:checked').val(),
-                areaSelection: $('input[name="area"]:checked').val() == 'state' ? 'goa' : $('#area-selection').val(),
-                aadhaar: $('#aadhaar').val(),
-                bank: $('#bank').val(),
-                distributionType: $('#distribution-type').val(),
-                timeFrom: $('#time-from').val(),
-                timeTo: $('#time-to').val(),
-                chartType: $('#chart-type').val(),
-                print: true,
-            };
-            var queryString = $.param(data);
-            var fullUrl = domainName + route + '?' + queryString;
-            window.open(fullUrl, '_blank');
-        }
-    });
 
     function front_end_checking() {
         var area = $('input[name="area"]:checked').val();
@@ -170,23 +147,27 @@ $(document).ready(function() {
             type: 'GET',
             data: data,
             success: function(response) {
-                // console.log(print);
+                console.log(response);
+                console.log("Generated URL:", response.generatedUrl);
                 // Handle the response from the server, e.g., update the chart
                 if(data.type === 'report'){
                     $('#report-output').html(response);
                     $('#title').text('Report Generation');
                     $('#chart').hide();
                     $('#report-output').show();
+                    data.print=true;
+                    var fullUrl = window.location.origin + '/chart-report/result' + '?' + $.param(data);
+                    $('#print').attr('href',fullUrl);
+                    $('#print').show();
                 }
                 else{
                     $('#chart').show();
                     $('#title').text(response.title);
                     $('#report-output').hide();
                     load_chart(chartEle, $('#chart-type').val(), response.data);
+                    $('#print').hide();
                 }
                 $('#chart-text').hide();
-                $('#print').show();
-                
                 // $('#output').text(JSON.stringify(response,null,2));
             },
             error: function(error) {

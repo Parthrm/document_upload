@@ -21,7 +21,7 @@
         <div class="flex justify-between ">
             <div class="w-72 ">
                 {{-- the control panel --}}
-                <div class=" h-[90vh] overflow-y-scroll overflow-x-hidden better-scroll px-2">
+                <div class="h-[90vh] overflow-y-scroll overflow-hidden better-scroll px-2">
                     {{-- what to generate --}}
                     <x-chartReport-control-panel-block title="Type">
                         <select id="resource-type" class="bg-gray-800 text-center text-white px-2 py-1 rounded-md w-full text-sm">
@@ -111,7 +111,7 @@
                             <option value="areaWise">Area Wise Distribution</option>
                             <option value="aadhaarSeed">Aadhaar Seeded Distribution</option>
                             <option value="bankLinked">Bank account linked Distribution</option>
-                            <option value="maleFemale">Male-Female Distribution</option>
+                            <option value="gender">Gender Distribution</option>
                             <option value="beneficiaryCount">Beneficiary Count</option>
                         </select>
                     </x-chartReport-control-panel-block>
